@@ -3,9 +3,12 @@ import React from 'react'
 function App() {
   return (
     <div>
-      <h1 className='bg-green-300'>Hello ai weight loose</h1>
-      <h3 className='bg-green-300'>Hello world</h3>
-      
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
     </div>
   )
 }

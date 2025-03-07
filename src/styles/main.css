@@ -1,1 +1,57 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@font-face {
+  font-family: "Avenir Light";
+  src: url(/src/assets/fonts/avenirLight.otf) format("opentype");
+}
+@font-face {
+  font-family: "Avenir Medium";
+  src: url(/src/assets/fonts/avenirMideum.otf) format("opentype");
+}
+@font-face {
+  font-family: "Avenir Black";
+  src: url(/src/assets/fonts/avenirBlack.otf) format("opentype");
+}
+body {
+  font-family: "Manrope";
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.text-large {
+  font-size: 18px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-xs {
+  font-size: 12px;
+} /*# sourceMappingURL=main.css.map */
