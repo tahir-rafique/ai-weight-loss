@@ -1,40 +1,47 @@
-h1{
-  font-size: 44px;
+* {
+  font-family: "Monrape";
+  line-height: normal;
 }
+body {
+  background-color: rebeccapurple;
+  color: wheat;
 
+  h1 {
+    font-size: 44px;
+  }
 
-h2{
-  font-size: 34px;
-}
+  h2 {
+    font-size: 34px;
+  }
 
-h3 {
-  font-size: 30px;
-}
+  h3 {
+    font-size: 30px;
+  }
 
-h4 {
-  font-size: 24px;
-}
+  h4 {
+    font-size: 24px;
+  }
+  w h5 {
+    font-size: 22px;
+  }
 
-h5 {
-  font-size: 22px;
-}
+  h6 {
+    font-size: 20px;
+  }
 
-h1 {
-  font-size: 20px;
-}
+  p {
+    font-size: 16px;
+  }
 
-p {
-  font-size: 16px;
-}
+  .text-large {
+    font-size: 18px;
+  }
 
-.text-large {
-  font-size: 18px;
-}
+  .text-small {
+    font-size: 14px;
+  }
 
-.text-small {
-  font-size: 14px;
-}
-
-.text-xs {
-  font-size: 12px;
+  .text-xs {
+    font-size: 12px;
+  }
 }

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-
 @font-face {
   font-family: "Avenir Light";
   src: url(/src/assets/fonts/avenirLight.otf) format("opentype");
@@ -16,42 +15,43 @@ body {
   font-family: "Manrope";
 }
 
-h1 {
+* {
+  font-family: "Monrape";
+  line-height: normal;
+}
+
+body {
+  background-color: rebeccapurple;
+  color: wheat;
+}
+body h1 {
   font-size: 44px;
 }
-
-h2 {
+body h2 {
   font-size: 34px;
 }
-
-h3 {
+body h3 {
   font-size: 30px;
 }
-
-h4 {
+body h4 {
   font-size: 24px;
 }
-
-h5 {
+body w h5 {
   font-size: 22px;
+  background-color: red;
 }
-
-h1 {
+body h6 {
   font-size: 20px;
 }
-
-p {
+body p {
   font-size: 16px;
 }
-
-.text-large {
+body .text-large {
   font-size: 18px;
 }
-
-.text-small {
+body .text-small {
   font-size: 14px;
 }
-
-.text-xs {
+body .text-xs {
   font-size: 12px;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
