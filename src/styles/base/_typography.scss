@@ -1,13 +1,12 @@
 * {
-  font-family: "Monrape";
-  line-height: normal;
+  font-family: "Manrope";
 }
-body {
-  background-color: var((--color-black-theme));
-  color: var((--color-bg));
 
+body {
+  // background-color: (var(--color-black-theme));
   h1 {
     font-size: 44px;
+    font-family: "Manrope";
   }
 
   h2 {
@@ -30,11 +29,11 @@ body {
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .text-large {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .text-small {
@@ -43,5 +42,8 @@ body {
 
   .text-xs {
     font-size: 12px;
+  }
+  .font-secondary {
+    font-family: "Avenir Medium";
   }
 }
