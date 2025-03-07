@@ -15,14 +15,25 @@ body {
   font-family: "Manrope";
 }
 
+body {
+  --color-primary: #ffc6af;
+  --color-btn: #fcc378;
+  --color-bg-light: #fff4ef;
+  --color-bg: #ffe8df;
+  --color-heading: #f16a77;
+  --color-dark: #282828;
+  --color-dark-light: #2828284d;
+  --color-black-theme: #000000;
+}
+
 * {
   font-family: "Monrape";
   line-height: normal;
 }
 
 body {
-  background-color: rebeccapurple;
-  color: wheat;
+  background-color: var(--color-black-theme);
+  color: var(--color-bg);
 }
 body h1 {
   font-size: 44px;
@@ -36,9 +47,8 @@ body h3 {
 body h4 {
   font-size: 24px;
 }
-body w h5 {
+body h5 {
   font-size: 22px;
-  background-color: red;
 }
 body h6 {
   font-size: 20px;
