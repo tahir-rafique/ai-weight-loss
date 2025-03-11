@@ -6,6 +6,7 @@ import PasswordRecover from './pages/Login/PasswordRecover'
 import VerifyCode from './pages/Login/VerifyCode'
 import NewPassword from './pages/Login/NewPassword'
 import Dashborad from './pages/Dashboard/Dashborad'
+import Layout from './pages/Layout'
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path='/new-password' element={<NewPassword />} />
 
         {/* Dashboard */}
-        <Route path='dashboard' element={<Dashborad />} />
+        <Route path='layout' element={<Layout />} />
 
       </Routes >
     </>

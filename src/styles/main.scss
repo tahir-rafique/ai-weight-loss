@@ -4,4 +4,5 @@
 // --------------------------------------
 @use "./base/_colors";
 @use './base/_typography';
-@use './base/rest'
+@use './base/rest';
+@use './components/sidebar.scss';
