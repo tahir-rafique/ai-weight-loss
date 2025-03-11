@@ -1,7 +1,5 @@
 * {
   line-height: normal;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -97,13 +95,9 @@ video,
   outline: 0;
   font-size: unset;
 }
-.row > * {
-  padding-left: 0;
-  padding-right: 0;
-}
+
 body {
   overflow-x: hidden;
-  font-family: "Inter", sans-serif;
   &::-webkit-scrollbar {
     display: none;
   }
