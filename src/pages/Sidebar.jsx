@@ -16,30 +16,30 @@ const Sidebar = () => {
             <div className='flex flex-col justify-between h-full pb-5!'>
 
 
-                <div className='sidebar-links flex flex-col gap-y-5'>
-                    <NavLink to='' className={`navLink hover:text-[var(--color-btn)] flex gap-2 items-center hover:backdrop:backdrop-blur-3xl`}>
+                <div className='sidebar-links flex flex-col gap-y-3 pt-2! text-[var(--color-dark-light)]'>
+                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 items-center hover:shadow-md rounded-[8px] px-2! py-2!` }>
                         <MdDashboard size={26} />
                         Dashboard
                     </NavLink>
 
-                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 items-center`}>
+                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 items-center hover:shadow-md rounded-[8px] px-2! py-2!`}>
                         <BsFillChatSquareTextFill size={22} />
                         AI Health Coach
                     </NavLink>
 
-                    <NavLink to='' className={`hover:text-[var(--color-btn)]  flex gap-2`}>
+                    <NavLink to='' className={`hover:text-[var(--color-btn)]  flex gap-2 hover:shadow-md rounded-[8px] px-2! py-2!`}>
                         <LuGoal size={22} />
 
                         Goals
                     </NavLink>
 
-                    <NavLink to='' className={`hover:text-[var(--color-btn)]  flex gap-2`}>
+                    <NavLink to='' className={`hover:text-[var(--color-btn)]  flex gap-2 hover:shadow-md rounded-[8px] px-2! py-2!`}>
                         <RiUserCommunityLine size={22} />
 
                         Community
                     </NavLink>
 
-                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2`}>
+                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 hover:shadow-md rounded-[8px] px-2! py-2!`}>
                         <TbSettingsCode size={22} />
 
                         Settings
