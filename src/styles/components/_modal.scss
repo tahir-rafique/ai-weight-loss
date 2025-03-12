@@ -1,0 +1,54 @@
+.ant-modal {
+  .ant-modal-content {
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px 0px;
+    .ant-modal-header {
+      display: none;
+    }
+
+    .ant-modal-body {
+      background-color: red;
+    }
+    .ant-modal-close {
+      top:2px;
+      inset-inline-end: 5px;
+      .anticon {
+        svg {
+
+          width: 20px;
+          height: 20px;
+          color: #fcc378;
+        }
+      }
+    }
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+}
+
+// Media query
+@media screen and (max-width: 600px) {
+  .ant-modal {
+    .ant-modal-content {
+      padding: 20px;
+      border-radius: 15px;
+      .ant-modal-body {
+        .project-videos {
+          video {
+            border-radius: 15px;
+          }
+          .project-video-content {
+            top: 10px;
+            left: 10px;
+            h3 {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

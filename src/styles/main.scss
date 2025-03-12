@@ -5,4 +5,5 @@
 @use "./base/_colors";
 @use "./base/_typography";
 @use "./base/rest";
-@use "./components/sidebar.scss";
+@use "./components/_sidebar.scss";
+@use './components/_modal'

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import arrow from '../../assets/icons/double-arrow-right.svg';
 import { IoPersonSharp } from "react-icons/io5";
 import { RiShareForwardFill } from "react-icons/ri";
@@ -7,9 +7,23 @@ import { IoIosArrowUp } from "react-icons/io";
 import { FaPersonBreastfeeding } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
 
+import { Button, Modal } from 'antd';
+
 import { RxCross2 } from "react-icons/rx";
 
 const Conversation = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false)
+    const showModal = () => {
+        setIsModalOpen(true);
+    };
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
+
+
     return (
         <div className='bg-[var(--color-bg)] h-screen w-full lg:pt-20 lg:pr-5 lg:pl-25 lg:pb-5 '>
 
@@ -22,13 +36,15 @@ const Conversation = () => {
 
                     {/* left-part1 */}
                     <div className='left-part1 flex flex-col gap-5 px-4  py-3'>
-
                         <h4 className='font-semibold font-secondary'>
                             AI health coach
                         </h4>
 
-                        <div className='bg-[var(--color-bg)] broder flex justify-center px-4 py-2 border border-[var(--color-btn)] rounded-[14px] '>
-                            <p className='text-[var(--color-btn)] text- font-semibold'>  Ask Question </p>
+                        {/* onClick open modal */}
+                        <div onClick={showModal}
+                            className='bg-[var(--color-bg)] broder flex justify-center px-4 py-2 border border-[var(--color-btn)] rounded-[14px] cursor-pointer'>
+                            <p className='text-[var(--color-btn)] text- font-semibold cursor-pointer'>  Ask Question
+                            </p>
                         </div>
 
                     </div>
@@ -37,7 +53,6 @@ const Conversation = () => {
 
                     {/* left-part2 */}
                     <div className='left-part2 flex flex-col gap-4 pt-4 px-2'>
-
                         <div className='flex justify-between items-center '>
 
                             <div className='flex items-center gap-1'>
@@ -48,8 +63,6 @@ const Conversation = () => {
                                 <img src={arrow} alt='' />
                             </div>
 
-
-
                         </div>
 
                         <div className='flex flex-col gap-2 items-center px-2 '>
@@ -57,7 +70,6 @@ const Conversation = () => {
                             <div className='text-xs px-4 py-3 bg-[var(--color-dim)] myrounded w-full'>Tell me about services y...</div>
                             <div className='text-xs px-4 py-3 bg-[var(--color-dim)]  myrounded w-full'>Tell me about services y...</div>
                         </div>
-
                     </div>
 
                 </div>
@@ -159,7 +171,7 @@ const Conversation = () => {
                             <div className='flex justify-between gap-2 items-center bg-[var(--color-bg)] px-4 py-2 rounded-[4px]'>
                                 <p className='text-xs'>   Choose a Community   </p>
                                 <IoIosArrowUp className='size-5 rotate-180' />
-                                
+
 
                             </div>
                         </div>
@@ -192,7 +204,7 @@ const Conversation = () => {
 
                             <div className='bg-[var(--color-bg)] py-1.5 rounded-[4px] flex items-center gap-1 px-2'>
                                 <input type="text" placeholder='Lorem ipsum dolor sit amet consectetur' disabled className='placeholder-black w-full px-2 text-xs' />
-                                <RxCross2 className='text-[var(--color-btn)]' size={20}/>
+                                <RxCross2 className='text-[var(--color-btn)]' size={20} />
                             </div>
 
 
@@ -204,6 +216,23 @@ const Conversation = () => {
 
                 </div>
 
+            </div>
+
+            {/* Modal */}
+            <div>
+                <Modal className='conversation-modal' title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                    <div className='conv-modal-wraper'>
+                        <div className="conv-modal-top px-10">
+
+
+                        </div>
+                        <div className='border-[var(--color-dark)] border-b-1 '></div>
+                        <div className="conv-modal-bottom">
+
+                        </div>
+
+                    </div>
+                </Modal>
             </div>
 
         </div>
