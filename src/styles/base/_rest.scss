@@ -2,7 +2,6 @@
   line-height: normal;
   box-sizing: border-box;
 }
-
 html,
 body,
 div,
@@ -89,20 +88,19 @@ video,
 .nav-item,
 .nav-link,
 .navbar-brand {
-  margin: 0;
-  padding: 0;
-  border: 0;
   outline: 0;
   font-size: unset;
 }
-
+.row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
 body {
   overflow-x: hidden;
   &::-webkit-scrollbar {
     display: none;
   }
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -111,22 +109,20 @@ figcaption,
 figure,
 footer,
 header,
+hgroup,
 menu,
 nav,
 section {
   display: block;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote {
   &:before,
   &:after {
@@ -134,7 +130,6 @@ blockquote {
     content: none;
   }
 }
-
 q {
   &:before,
   &:after {
@@ -142,12 +137,10 @@ q {
     content: "";
   }
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 button {
   outline: none;
   border: none;

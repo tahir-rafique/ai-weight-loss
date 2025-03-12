@@ -1,15 +1,14 @@
 body {
-  --color-background: #ffffff;
+  --color-bg: #ffe8df;
+  --color-bg-white: #ffffff;
   --color-primary: #ffc6af;
   --color-btn: #fcc378;
   --color-bg-light: #fff4ef;
-  --color-bg: #ffe8df;
   --color-heading: #f16a77;
   --color-dark: #282828;
-  --color-dark-light: #2828284d;
+  --color-dark-light: rgba(40, 40, 40, 0.2);
   --color-black-theme: #000000;
   --text-sec: #02d86d;
-  --sec-bg: #02D86D1A;
-  --color-uniq:#86FFCF;
-  
+  --sec-bg: #02d86d1a;
+  --color-uniq: #86ffcf;
 }
