@@ -17,7 +17,7 @@ const Sidebar = () => {
 
 
                 <div className='sidebar-links flex flex-col gap-y-3 pt-2! text-[var(--color-dark-light)]'>
-                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 items-center hover:shadow-md rounded-[8px] px-2! py-2!` }>
+                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 items-center hover:shadow-md  rounded-[8px] px-2! py-2!` }>
                         <MdDashboard size={26} />
                         Dashboard
                     </NavLink>

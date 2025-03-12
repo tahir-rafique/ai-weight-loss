@@ -7,6 +7,7 @@ import VerifyCode from './pages/Login/VerifyCode'
 import NewPassword from './pages/Login/NewPassword'
 import Dashborad from './pages/Dashboard/Dashborad'
 import Layout from './pages/Layout'
+import Conversation from './pages/Conversation/Conversation'
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
 
         {/* Dashboard */}
         <Route path='layout' element={<Layout />} />
+
+        {/* Conversation  */}
+        <Route path='conversation' element={<Conversation />} />
+
 
       </Routes >
     </>
