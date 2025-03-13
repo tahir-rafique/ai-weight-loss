@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
 import { Modal } from 'antd';
-
-
-
-
-
 import { InputBox } from './../../components/InputBox';
 import sandclock from '../../assets/icons/conversation/sand-clock.svg'
 import searchicon from '../../assets/icons/conversation/search-icon.webp'
@@ -14,11 +9,9 @@ import mdicon from '../../assets/icons/conversation/md-icon.svg'
 import doubleArrowRight from '../../assets/icons/conversation/double-arrow-right.svg'
 import lineVectorSidebar from '../../assets/icons/conversation/line-vector-sidebar.svg'
 import jackimg from '../../assets/images/conversation/jack-img.svg'
-
 import info from '../../assets/icons/conversation/info.svg'
 import arrowup from '../../assets/icons/conversation/arrowup.svg'
 import arrowdown from '../../assets/icons/conversation/arrowdown.svg'
-
 import buddyIcon from '../../assets/icons/conversation/buddy.svg'
 import plus from '../../assets/icons/conversation/plusicon.svg'
 import cross from '../../assets/icons/conversation/crossicon.svg'
@@ -27,10 +20,7 @@ import community from '../../assets/icons/conversation/communityicon.svg'
 import forwardMessage from '../../assets/icons/conversation/forward.svg'
 import arrowcircleup from '../../assets/icons/conversation/arrowcircleup.svg'
 
-
-
 const Conversation = () => {
-
 
     // Modal
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -44,14 +34,12 @@ const Conversation = () => {
         setIsModalOpen(false);
     };
 
-
     return (
-        <div className='bg-[var(--color-bg)] h-screen w-screen lg:pt-20 lg:pr-5 lg:pl-25 lg:pb-5 '>
-
-
+        <div className='bg-[var(--color-bg)] h-screen w-screen lg:pt-20 lg:pr-5 lg:pl-25 lg:pb-5'>
             <button className='fixed top-10 left-10'>
                 <img src={arrowcircleup} alt="" />
             </button>
+
             {/*Conversation Main wraper */}
             <div className='conv-main-wraper w-full h-full flex gap-5 justify-between'>
 
@@ -105,7 +93,8 @@ const Conversation = () => {
 
                 {/* conv-center 📍 */}
                 <div
-                    className="conv-center pt-5 max-w-fit; w-full h-full drop-shadow-lg myrounded bg-[var(--color-bg-white)] border-b-[10px] border-[var(--color-primary)] px-6 flex flex-col gap-10 justify-between pb-10 ">
+                    className="conv-center pt-5  w-full h-full drop-shadow-lg myrounded bg-[var(--color-bg-white)] border-b-[10px] border-[var(--color-primary)] px-6 flex flex-col gap-10 justify-between pb-10 relative z-100 ">
+
                     {/* center-top */}
                     <div className='center-top flex flex-col gap-8'>
 
@@ -135,9 +124,8 @@ const Conversation = () => {
 
 
                     {/* middel */}
-                    <div className='flex items-center justify-between h-full relative '>
-                        <img src={mdicon} alt="no image" className='h-full absolute left-[50%] translate-x-[-50%] opacity-24' />
-                    </div>
+                    <img src={mdicon} alt="no image" className='h-full absolute left-[50%] translate-[-50%]  top-[50%] opacity-20 max-[1600px]:size-40  max-[1600px]:top-[65%] size-80  -z-100' />
+
 
 
                     {/* center-bottom */}
@@ -162,7 +150,6 @@ const Conversation = () => {
                         </h4>
                         <img src={info} alt="info" />
                     </div>
-
                     <hr className='text-[var(--color-dark-light)]' />
 
                     {/* left-part2 */}
@@ -210,23 +197,15 @@ const Conversation = () => {
                             <div className='flex justify-between gap-2 items-center bg-[var(--color-bg)] px-4 py-2 rounded-[4px]'>
                                 <p className='text-xs'>   Choose a Community   </p>
                                 <img src={arrowdown} alt="" />
-
-
-
-
                             </div>
                         </div>
 
 
                         <hr className='text-[var(--color-dark-light)] my-2' />
-
-
                         {/* Notes */}
                         <div className='notes flex flex-col gap-4'>
                             <div className='flex justify-between gap-3'>
-
                                 <div className='flex items-center gap-3'>
-
                                     <img src={arrowup} alt="" />
                                     <img src={notes} alt="notes" />
 
@@ -238,7 +217,6 @@ const Conversation = () => {
                                     <img src={plus} alt="" />
                                 </div>
                             </div>
-
                             <div className='bg-[var(--color-bg)] rounded-[4px]'>
                                 <input type="text" placeholder='Type here' className='placeholder-[var(--color-dark-light)] w-full px-2 text-xs  py-2' />
                             </div>
@@ -254,9 +232,7 @@ const Conversation = () => {
 
                         </div>
                     </div>
-
                 </div>
-
             </div>
 
             {/* Modal */}
