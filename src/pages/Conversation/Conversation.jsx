@@ -185,8 +185,8 @@ const Conversation = () => {
                                     <img src={plus} alt="" />
                                 </div>
                             </div>
-
-                            <div className='p-4 myrounded border border-[var(--color-border)] flex flex-col gap-1'>
+                            {/* acc details */}
+                            <div className='p-4 myrounded border-2 border-[var(--color-border)] flex flex-col gap-1'>
                                 <div className='flex gap-2'> <p className='text-xs '> Name:</p> <p className='text-small font-bold'> Joseph</p>  </div>
                                 <div className='flex gap-2'> <p className='text-xs '>  Phone no:</p> <p className='text-small font-bold'> +123456789</p>  </div>
                                 <div className='flex gap-2'> <p className='text-xs '> Email:</p> <p className='text-small font-bold'>  @gmail.com </p>  </div>
