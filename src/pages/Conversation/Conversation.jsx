@@ -1,23 +1,31 @@
 import React, { useState } from 'react';
-import arrow from '../../assets/icons/double-arrow-right.svg';
-import { IoPersonSharp } from "react-icons/io5";
-import { RiShareForwardFill } from "react-icons/ri";
-import { FiInfo } from "react-icons/fi";
-import { IoIosArrowUp } from "react-icons/io";
-import { FaPersonBreastfeeding } from "react-icons/fa6";
-import { FaPlus } from "react-icons/fa6";
+import { Modal } from 'antd';
 
-import { Button, Modal } from 'antd';
 
-import { RxCross2 } from "react-icons/rx";
+
+
+
 import { InputBox } from './../../components/InputBox';
-
 import sandclock from '../../assets/icons/conversation/sand-clock.svg'
 import searchicon from '../../assets/icons/conversation/search-icon.webp'
-
 import clock from '../../assets/icons/conversation/clock.webp'
-
 import dotsicon from '../../assets/icons/conversation/dots-icon.webp'
+import mdicon from '../../assets/icons/conversation/md-icon.svg'
+import doubleArrowRight from '../../assets/icons/conversation/double-arrow-right.svg'
+import lineVectorSidebar from '../../assets/icons/conversation/line-vector-sidebar.svg'
+import jackimg from '../../assets/images/conversation/jack-img.svg'
+import forwardMessage from '../../assets/images/conversation/jack-img.svg'
+
+import info from '../../assets/icons/conversation/info.svg'
+import arrowup from '../../assets/icons/conversation/arrowup.svg'
+import arrowdown from '../../assets/icons/conversation/arrowdown.svg'
+
+import buddyIcon from '../../assets/icons/conversation/buddy.svg'
+import plus from '../../assets/icons/conversation/plusicon.svg'
+import cross from '../../assets/icons/conversation/crossicon.svg'
+import notes from '../../assets/icons/conversation/notesicon.svg'
+import community from '../../assets/icons/conversation/communityicon.svg'
+
 
 
 
@@ -46,11 +54,11 @@ const Conversation = () => {
 
                 {/* conv-left-side 📍 */}
                 <div
-                    className='conv-left-side min-w-[210px] h-full drop-shadow-lg myrounded bg-[var(--color-bg-white)] border-b-[10px] border-[var(--color-primary)] py-3'>
+                    className='conv-left-side min-w-[230px] h-full drop-shadow-lg myrounded bg-[var(--color-bg-white)] border-b-[10px] border-[var(--color-primary)] py-3'>
 
                     {/* left-part1 */}
                     <div className='left-part1 flex flex-col gap-5 px-4  py-3'>
-                        <h4 className='font-semibold font-secondary'>
+                        <h4 className='font-semibold font-secondary text-center'>
                             AI health coach
                         </h4>
 
@@ -63,18 +71,18 @@ const Conversation = () => {
 
                     </div>
 
-                    <hr className='text-[var(--color-border)]' />
+                    <hr className='text-[var(--color-dark-light)]' />
 
                     {/* left-part2 */}
-                    <div className='left-part2 flex flex-col gap-4 pt-4 px-2'>
-                        <div className='flex justify-between items-center '>
+                    <div className='left-part2 flex flex-col gap-4 pt-4 px-4 relative'>
+                        <div className='flex justify-between items-center  '>
 
                             <div className='flex items-center gap-1'>
-                                <span className='text-3xl! text-[var(--color-btn)] font-bold'>MD</span>
+                                <img src={mdicon} alt="" />
                                 <h6>History</h6>
                             </div>
                             <div className=' '>
-                                <img src={arrow} alt='' />
+                                <img src={doubleArrowRight} alt='' />
                             </div>
 
                         </div>
@@ -84,33 +92,36 @@ const Conversation = () => {
                             <div className='text-xs px-4 py-3 bg-[var(--color-dim)] myrounded w-full'>Tell me about services y...</div>
                             <div className='text-xs px-4 py-3 bg-[var(--color-dim)]  myrounded w-full'>Tell me about services y...</div>
                         </div>
+
+
+                        <img src={lineVectorSidebar} alt="no" className='absolute top-14 h-34 left-2' />
+
                     </div>
 
                 </div>
 
                 {/* conv-center 📍 */}
-                <div className="conv-center pt-5 max-w-fit; w-full h-full drop-shadow-lg myrounded bg-[var(--color-bg-white)] border-b-[10px] border-[var(--color-primary)] px-6 flex flex-col  justify-between pb-10">
-                    {/* conv-top */}
-                    <div className='conv-top flex flex-col gap-8'>
+                <div
+                    className="conv-center pt-5 max-w-fit; w-full h-full drop-shadow-lg myrounded bg-[var(--color-bg-white)] border-b-[10px] border-[var(--color-primary)] px-6 flex flex-col  justify-between pb-10 relative z-100">
+                    {/* center-top */}
+                    <div className='center-top flex flex-col gap-8'>
 
-                        <div className='flex flex-col items-center gap-2'>
-
-                            <IoPersonSharp className='text-7xl' />
+                        <div className='flex flex-col items-center gap-1'>
+                            <img src={jackimg} alt="jack" className='size-20' />
                             <h6>Jack</h6>
                             <p className='text-small text-[var(--color-dark-light)]'>Health Coach</p>
-
                         </div>
 
                         <div className='flex gap-4 '>
 
                             <div className=''>
-                                <IoPersonSharp className='text-5xl ' />
+                                <img src={jackimg} alt="jack" className='size-14' />
                             </div>
 
-                            <div className='bg-[var(--color-bg)] px-4 py-2 myrounded w-full flex flex-col gap-3' >
+                            <div className='bg-[var(--color-bg)] px-4 py-3 rounded-[14px] w-full flex flex-col gap-3' >
                                 <p className='text-small'>Hello! I am your AI Health Coach. Please choose one persona either Suzy or Jack. Once you select your persona then it can’t be changed.
                                 </p>
-                                <div className='flex gap-2'>
+                                <div className='flex gap-1'>
                                     <button className='bg-[var(--color-btn)] px-3 py-1 rounded-[500px]'>Suzy</button>
                                     <button className='bg-[var(--color-btn)] px-3 py-1 rounded-[500px]'>Jack</button>
                                 </div>
@@ -119,15 +130,20 @@ const Conversation = () => {
                         </div>
                     </div>
 
-                    {/* conv-bottom */}
-                    <div className='conv-bottom ' >
+
+                    {/* center-bottom */}
+                    <div className='center-bottom  relative z-100' >
                         <div className="inp-wraper flex items-center py-1 px-4 myrounded 
                         shadow-[1px_1px_10px_1px_rgba(10,10,10,0.1)]">
                             <input type="text" placeholder='Type a message' className='w-full placeholder-[var(--color-dark-light)]' />
-                            <RiShareForwardFill size={34} className='text-[var(--color-btn)]' />
+                            <img src={forwardMessage} alt="" />
                         </div>
 
                     </div>
+
+                    {/* MD bg-img */}
+                    <img src={mdicon} alt="" className='absolute bottom-0 left-[50%]
+                     translate-[-50%] opacity-30 -z-100 h-[20%] 2xl:h-[40%]' />
 
                 </div>
 
@@ -140,10 +156,10 @@ const Conversation = () => {
                         <h4 className='font-secondary'>
                             Memorizing
                         </h4>
-                        <FiInfo size={24} className='text-[var(--color-btn)]' />
+                        <img src={info} alt="info" />
                     </div>
 
-                    <hr className='text-[var(--color-border)] my-2' />
+                    <hr className='text-[var(--color-dark-light)]' />
 
                     {/* left-part2 */}
                     <div className='left-part2 px-6 py-2 flex flex-col  gap-4'>
@@ -154,14 +170,15 @@ const Conversation = () => {
                             <div className='flex justify-between gap-3'>
 
                                 <div className='flex items-center gap-3'>
-                                    <IoIosArrowUp className='text-[var(--color-btn)] size-5' />
-                                    <FaPersonBreastfeeding />
+                                    <img src={arrowup} alt="" />
+
+                                    <img src={buddyIcon} alt="buddyIcon" />
                                     <p className='font-bold text-small'>Accountability Buddy</p>
                                 </div>
 
                                 <div className='flex items-center gap-2 bg-[var(--color-btn)] px-2 py-1 myrounded'>
                                     <button className='text-xs'>Add</button>
-                                    <FaPlus className='text-white' />
+                                    <img src={plus} alt="" />
                                 </div>
                             </div>
 
@@ -172,53 +189,66 @@ const Conversation = () => {
                             </div>
                         </div>
 
-                        <hr className='text-[var(--color-border)] my-2' />
+                        <hr className='text-[var(--color-dark-light)] my-2' />
+
 
                         {/* Community */}
                         <div className='community flex flex-col gap-4'>
                             <div className='flex items-center gap-3'>
-                                <IoIosArrowUp className='text-[var(--color-btn)] size-5' />
-                                <FaPersonBreastfeeding />
+
+                                <img src={arrowup} alt="" />
+
+
+                                <img src={community} alt="community" />
                                 <p className='font-bold text-small'>Community</p>
                             </div>
 
                             <div className='flex justify-between gap-2 items-center bg-[var(--color-bg)] px-4 py-2 rounded-[4px]'>
                                 <p className='text-xs'>   Choose a Community   </p>
-                                <IoIosArrowUp className='size-5 rotate-180' />
+                                <img src={arrowdown} alt="" />
+
+
 
 
                             </div>
                         </div>
 
 
-                        <hr className='text-[var(--color-border)] my-2' />
+                        <hr className='text-[var(--color-dark-light)] my-2' />
+
 
                         {/* Notes */}
                         <div className='notes flex flex-col gap-4'>
                             <div className='flex justify-between gap-3'>
 
                                 <div className='flex items-center gap-3'>
-                                    <IoIosArrowUp className='text-[var(--color-btn)] size-5' />
-                                    <FaPersonBreastfeeding />
+
+                                    <img src={arrowup} alt="" />
+                                    <img src={notes} alt="notes" />
+                                  
                                     <p className='font-bold text-small'>Notes</p>
                                 </div>
 
                                 <div className='flex items-center gap-2 bg-[var(--color-btn)] px-2 py-1 myrounded'>
                                     <button className='text-xs'>Add</button>
-                                    <FaPlus className='text-white' />
+                                    <img src={plus} alt="" />
                                 </div>
                             </div>
 
-                            <div className='bg-[var(--color-bg)] py-1.5 rounded-[4px]'>
-                                <input type="text" placeholder='Type here' className='placeholder-[var(--color-dark-light)] w-full px-2 text-xs' />
+                            <div className='bg-[var(--color-bg)] rounded-[4px]'>
+                                <input type="text" placeholder='Type here' className='placeholder-[var(--color-dark-light)] w-full px-2 text-xs  py-2' />
                             </div>
+
                             <div>
                                 <p className='text-xs'>Press <span className='bg-[var(--color-bg)] rounded-md px-1 text-[var(--color-btn)]'>Enter</span>to add note</p>
                             </div>
 
-                            <div className='bg-[var(--color-bg)] py-1.5 rounded-[4px] flex items-center gap-1 px-2'>
-                                <input type="text" placeholder='Lorem ipsum dolor sit amet consectetur' disabled className='placeholder-black w-full px-2 text-xs' />
-                                <RxCross2 className='text-[var(--color-btn)]' size={20} />
+                            <div className='bg-[var(--color-bg)] rounded-[4px] flex items-center gap-1 px-2'>
+
+                                <input type="text" placeholder='Lorem ipsum dolor sit amet consectetur' disabled className='placeholder-black w-full text-xs py-2' />
+
+                                <img src={cross} alt="" className='h-6' />
+
                             </div>
 
 
