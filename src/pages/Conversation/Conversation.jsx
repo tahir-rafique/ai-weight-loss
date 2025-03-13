@@ -14,7 +14,6 @@ import mdicon from '../../assets/icons/conversation/md-icon.svg'
 import doubleArrowRight from '../../assets/icons/conversation/double-arrow-right.svg'
 import lineVectorSidebar from '../../assets/icons/conversation/line-vector-sidebar.svg'
 import jackimg from '../../assets/images/conversation/jack-img.svg'
-import forwardMessage from '../../assets/images/conversation/jack-img.svg'
 
 import info from '../../assets/icons/conversation/info.svg'
 import arrowup from '../../assets/icons/conversation/arrowup.svg'
@@ -25,8 +24,8 @@ import plus from '../../assets/icons/conversation/plusicon.svg'
 import cross from '../../assets/icons/conversation/crossicon.svg'
 import notes from '../../assets/icons/conversation/notesicon.svg'
 import community from '../../assets/icons/conversation/communityicon.svg'
-
-
+import forwardMessage from '../../assets/icons/conversation/forward.svg'
+import arrowcircleup from '../../assets/icons/conversation/arrowcircleup.svg'
 
 
 
@@ -47,8 +46,12 @@ const Conversation = () => {
 
 
     return (
-        <div className='bg-[var(--color-bg)] h-screen w-full lg:pt-20 lg:pr-5 lg:pl-25 lg:pb-5 '>
+        <div className='bg-[var(--color-bg)] h-screen w-screen lg:pt-20 lg:pr-5 lg:pl-25 lg:pb-5 '>
 
+
+            <button className='fixed top-10 left-10'>
+                <img src={arrowcircleup} alt="" />
+            </button>
             {/*Conversation Main wraper */}
             <div className='conv-main-wraper w-full h-full flex gap-5 justify-between'>
 
@@ -102,7 +105,7 @@ const Conversation = () => {
 
                 {/* conv-center 📍 */}
                 <div
-                    className="conv-center pt-5 max-w-fit; w-full h-full drop-shadow-lg myrounded bg-[var(--color-bg-white)] border-b-[10px] border-[var(--color-primary)] px-6 flex flex-col  justify-between pb-10 relative z-100">
+                    className="conv-center pt-5 max-w-fit; w-full h-full drop-shadow-lg myrounded bg-[var(--color-bg-white)] border-b-[10px] border-[var(--color-primary)] px-6 flex flex-col gap-10 justify-between pb-10 ">
                     {/* center-top */}
                     <div className='center-top flex flex-col gap-8'>
 
@@ -131,25 +134,26 @@ const Conversation = () => {
                     </div>
 
 
+                    {/* middel */}
+                    <div className='flex items-center justify-between h-full relative '>
+                        <img src={mdicon} alt="no image" className='h-full absolute left-[50%] translate-x-[-50%] opacity-24' />
+                    </div>
+
+
                     {/* center-bottom */}
-                    <div className='center-bottom  relative z-100' >
-                        <div className="inp-wraper flex items-center py-1 px-4 myrounded 
-                        shadow-[1px_1px_10px_1px_rgba(10,10,10,0.1)]">
-                            <input type="text" placeholder='Type a message' className='w-full placeholder-[var(--color-dark-light)]' />
-                            <img src={forwardMessage} alt="" />
+                    <div className='center-bottom ' >
+                        <div className="inp-wraper flex items-center py-3 px-4 myrounded 
+                        shadow-[1px_1px_10px_1px_rgba(10,10,10,0.1)] ">
+                            <input type="text" placeholder='Type a message' className='w-full placeholder-[var(--color-dark-light)] ' />
+                            <img src={forwardMessage} alt="no" className='cursor-pointer' />
                         </div>
 
                     </div>
-
-                    {/* MD bg-img */}
-                    <img src={mdicon} alt="" className='absolute bottom-0 left-[50%]
-                     translate-[-50%] opacity-30 -z-100 h-[20%] 2xl:h-[40%]' />
-
                 </div>
 
                 {/* conv-right-side 📍 */}
                 <div
-                    className='conv-right-side min-w-[330px] h-full drop-shadow-lg myrounded bg-[var(--color-bg-white)] border-b-[10px] border-[var(--color-primary)] '>
+                    className='conv-right-side min-w-[330px] h-full  drop-shadow-lg myrounded bg-[var(--color-bg-white)] border-b-[10px] border-[var(--color-primary)] '>
 
                     {/* left-part1 */}
                     <div className='left-part1 flex justify-between items-center gap-5  p-6'>
@@ -162,7 +166,7 @@ const Conversation = () => {
                     <hr className='text-[var(--color-dark-light)]' />
 
                     {/* left-part2 */}
-                    <div className='left-part2 px-6 py-2 flex flex-col  gap-4'>
+                    <div className='left-part2 px-6 py-2 flex flex-col  gap-4 pt-4'>
 
 
                         {/* Accounts */}
@@ -225,7 +229,7 @@ const Conversation = () => {
 
                                     <img src={arrowup} alt="" />
                                     <img src={notes} alt="notes" />
-                                  
+
                                     <p className='font-bold text-small'>Notes</p>
                                 </div>
 
@@ -244,18 +248,11 @@ const Conversation = () => {
                             </div>
 
                             <div className='bg-[var(--color-bg)] rounded-[4px] flex items-center gap-1 px-2'>
-
                                 <input type="text" placeholder='Lorem ipsum dolor sit amet consectetur' disabled className='placeholder-black w-full text-xs py-2' />
-
                                 <img src={cross} alt="" className='h-6' />
-
                             </div>
 
-
                         </div>
-
-
-
                     </div>
 
                 </div>
