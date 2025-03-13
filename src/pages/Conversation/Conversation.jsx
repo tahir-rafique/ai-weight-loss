@@ -10,8 +10,22 @@ import { FaPlus } from "react-icons/fa6";
 import { Button, Modal } from 'antd';
 
 import { RxCross2 } from "react-icons/rx";
+import { InputBox } from './../../components/InputBox';
+
+import sandclock from '../../assets/icons/conversation/sand-clock.svg'
+import searchicon from '../../assets/icons/conversation/search-icon.webp'
+
+import clock from '../../assets/icons/conversation/clock.webp'
+
+import dotsicon from '../../assets/icons/conversation/dots-icon.webp'
+
+
+
 
 const Conversation = () => {
+
+
+    // Modal
     const [isModalOpen, setIsModalOpen] = useState(false)
     const showModal = () => {
         setIsModalOpen(true);
@@ -219,16 +233,133 @@ const Conversation = () => {
             </div>
 
             {/* Modal */}
-            <div>
+            <div className='shadow-md'>
                 <Modal className='conversation-modal' title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-                    <div className='conv-modal-wraper'>
-                        <div className="conv-modal-top px-10">
+                    <div className='conv-modal-wraper '>
 
+                        {/* top */}
+                        <div className="conv-modal-top flex items-center justify-between px-4">
+                            <div className="part1 flex gap-2 items-center">
+                                <img src={sandclock} alt="" />
+                                <h3>History</h3>
+                            </div>
 
+                            <div className="part2">
+                                <div className="input-wraper bg-[var(--color-bg)] rounded-[4px] px-2 py-1">
+                                    <InputBox placeholder='Search thread' icon={searchicon} className='flex items-center gap-4 w-full' />
+                                </div>
+                            </div>
                         </div>
-                        <div className='border-[var(--color-dark)] border-b-1 '></div>
-                        <div className="conv-modal-bottom">
 
+                        <hr className='my-2  text-[var(--color-dark-light)] ' />
+
+                        {/* bottom */}
+                        <div className="conv-modal-bottom px-4 py-5 ">
+                            <div className='inner-content  overflow-y-auto h-[400px]  px-2 flex flex-col gap-4'>
+
+                                <div className='bg-[var(--color-border)] p-4 rounded-[12px] flex gap-4 flex-col'>
+
+                                    <div className='flex flex-col gap-2'>
+
+                                        <p className='font-bold'>Tell me about services you provide</p>
+                                        <p className='text-small text-[var(--text-light)]'>Hello! I am your AI Health Coach. Please choose one persona either Suzy or Jack. Once you select your persona then it can’t be changed.</p>
+
+                                    </div>
+
+                                    <div className='flex items-center justify-between gap-2'>
+
+                                        <div className='flex items-center gap-2'>
+                                            <img src={clock} alt="no" />
+                                            <p className='text-xs text-[var(--text-light)]'>Just now</p>
+                                        </div>
+
+                                        <div>
+                                            <img src={dotsicon} alt="" />
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div className='bg-[var(--color-border)] p-4 rounded-[12px] flex gap-4 flex-col'>
+
+                                    <div className='flex flex-col gap-2'>
+
+                                        <p className='font-bold'>Tell me about services you provide</p>
+                                        <p className='text-small text-[var(--text-light)]'>Hello! I am your AI Health Coach. Please choose one persona either Suzy or Jack. Once you select your persona then it can’t be changed.</p>
+
+                                    </div>
+
+                                    <div className='flex items-center justify-between gap-2'>
+
+                                        <div className='flex items-center gap-2'>
+                                            <img src={clock} alt="no" />
+                                            <p className='text-xs text-[var(--text-light)]'>Just now</p>
+                                        </div>
+
+                                        <div>
+                                            <img src={dotsicon} alt="" />
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div className='bg-[var(--color-border)] p-4 rounded-[12px] flex gap-4 flex-col'>
+                                    <div className='flex flex-col gap-2'>
+
+                                        <p className='font-bold'>Tell me about services you provide</p>
+                                        <p className='text-small text-[var(--text-light)]'>Hello! I am your AI Health Coach. Please choose one persona either Suzy or Jack. Once you select your persona then it can’t be changed.</p>
+
+                                    </div>
+
+                                    <div className='flex items-center justify-between gap-2'>
+                                        <div className='flex items-center gap-2'>
+                                            <img src={clock} alt="no" />
+                                            <p className='text-xs text-[var(--text-light)]'>Just now</p>
+                                        </div>
+
+                                        <div>
+                                            <img src={dotsicon} alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className='bg-[var(--color-border)] p-4 rounded-[12px] flex gap-4 flex-col'>
+                                    <div className='flex flex-col gap-2'>
+                                        <p className='font-bold'>Tell me about services you provide</p>
+                                        <p className='text-small text-[var(--text-light)]'>Hello! I am your AI Health Coach. Please choose one persona either Suzy or Jack. Once you select your persona then it can’t be changed.</p>
+                                    </div>
+
+                                    <div className='flex items-center justify-between gap-2'>
+                                        <div className='flex items-center gap-2'>
+                                            <img src={clock} alt="no" />
+                                            <p className='text-xs text-[var(--text-light)]'>Just now</p>
+                                        </div>
+                                        <div>
+                                            <img src={dotsicon} alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div className='bg-[var(--color-border)] p-4 rounded-[12px] flex gap-4 flex-col'>
+                                    <div className='flex flex-col gap-2'>
+                                        <p className='font-bold'>Tell me about services you provide</p>
+                                        <p className='text-small text-[var(--text-light)]'>Hello! I am your AI Health Coach. Please choose one persona either Suzy or Jack. Once you select your persona then it can’t be changed.</p>
+                                    </div>
+
+                                    <div className='flex items-center justify-between gap-2'>
+                                        <div className='flex items-center gap-2'>
+                                            <img src={clock} alt="no" />
+                                            <p className='text-xs text-[var(--text-light)]'>Just now</p>
+                                        </div>
+                                        <div>
+                                            <img src={dotsicon} alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>

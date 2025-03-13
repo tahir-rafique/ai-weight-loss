@@ -95,12 +95,15 @@ video,
   padding-left: 0;
   padding-right: 0;
 }
-body {
-  overflow-x: hidden;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
+
+// body {
+//   overflow-x: hidden;
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+// }
+
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
