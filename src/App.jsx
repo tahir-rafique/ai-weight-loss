@@ -19,7 +19,7 @@ function App() {
         {/* Login Routes */}
         <Route path='/' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
-        <Route path='/password-recover' element={<PasswordRecover />} />
+        <Route path='/recover-password' element={<PasswordRecover />} />
         <Route path='/verify-code' element={<VerifyCode />} />
         <Route path='/new-password' element={<NewPassword />} />
 

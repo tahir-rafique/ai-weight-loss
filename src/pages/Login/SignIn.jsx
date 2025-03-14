@@ -22,7 +22,7 @@ function SignIn() {
     <>
       <div className='w-full'>
         <Link to="/" className='cursor-pointer'>
-          <img src={logo} alt="no" className='w-60 py-10 px-10' />
+          <img src={logo} alt="no" className='w-60 pt-5 px-10' />
         </Link>
       </div>
 
@@ -39,7 +39,7 @@ function SignIn() {
             onSubmit={(e) => { e.preventDefault() }}
           >
 
-            <div className='flex flex-col gap-5  items-center max-w-[320px] mx-auto'>
+            <div className='flex flex-col gap-4  items-center max-w-[320px] mx-auto'>
 
               <InputBox
                 className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] '
@@ -59,7 +59,7 @@ function SignIn() {
               <Btn title='Sign in' className='bg-[var(--color-btn)] px-10 py-3 rounded-[8px] font-semibold w-[318px] flex justify-center items-center drop-shadow-lg' />
 
               <div className='flex justify-between gap-5 w-full'>
-                <Link to="password-recover">  <p className='text-xs'>Forgot your password?</p></Link>
+                <Link to="recover-password">  <p className='text-xs'>Forgot your password?</p></Link>
 
                 <Link to="sign-up"> <p className='text-xs text-[var(--color-heading)] underline'>Sign up</p> </Link>
               </div>

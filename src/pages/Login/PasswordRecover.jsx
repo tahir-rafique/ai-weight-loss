@@ -2,41 +2,56 @@ import React from 'react'
 import { InputBox } from './../../components/shared/InputBox';
 import Btn from '../../components/shared/Btn';
 import logo from '../../assets/icons/mdlogo.webp'
+import { Link } from 'react-router-dom';
 
 const PasswordRecover = () => {
     return (
         <>
-
             <div className='w-full'>
-                <a href="/" className='cursor-pointer'>
-                    <img src={logo} alt="no" className='w-60 py-10! px-10!' />
-                </a>
+                <Link to="/" className='cursor-pointer'>
+                    <img src={logo} alt="no" className='w-60 py-8 px-10' />
+                </Link>
             </div>
 
-            <div className='bg-[var(--color-background)] flex flex-col items-center  h-[95vh] w-full'>
-
+            <div className='bg-[var(--color-background)] flex flex-col gap-2 items-center h-full w-full'>
 
                 <h1 className='text-center font-semibold'>Password Recovery</h1>
 
+                <div className='bg-[url(../assets/icons/login/subtract.svg)]  bg-no-repeat  w-full bg-center h-full py-30 pb-50 relative'  >
+                    <form
+                        onSubmit={(e) => {
+                            e.preventDefault()
+                        }}>
 
-                <form
-                    onSubmit={(e) => {
-                        e.preventDefault()
-                    }}>
+                        <div className='flex flex-col gap-4 py-20 items-center'>
 
-                    <div className='flex flex-col gap-4 py-20! items-center'>
+                            <InputBox
+                                className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] '
+                                label='Email address'
+                                placeholder='Enter your email address'
+                                type='email'
+                            />
+
+                            <Btn
+                                title='Continue'
+                                className='bg-[var(--color-btn)] px-10 py-3 rounded-[8px] font-semibold w-[318px] flex justify-center items-center shadow-md'
+                            />
+                        </div>
 
 
-                        <InputBox className='bg-[var(--color-bg-light)] px-4! py-3!  rounded-[8px] w-[318px] ' label='Email address' placeholder='Enter your email address' />
+                    </form>
 
-
-                        <Btn title='Continue' className='bg-[var(--color-btn)] px-10! py-3! rounded-[8px] font-semibold w-[318px] flex justify-center items-center shadow-md' />
+                    <div className='absolute bottom-15
+                    max-lg:left-[12%] 
+                    max-xl:left-[18%]
+                    max-2xl:left-[30%]
+                    max-[2000px]:left-[29vw] 
+                    min-[2000px]:left-[33vw]  '>
+                        <Btn
+                            title='Get Back'
+                            className='bg-[var(--color-btn)] w-fit px-8 py-3 rounded-[8px] font-semibold  items-center shadow-md' />
                     </div>
-
-                    <div className='flex justify-start w-full'>
-                        <Btn title='Get Back' className='bg-[var(--color-btn)] px-5! py-3! rounded-[8px] font-semibold  items-center shadow-md' />
-                    </div>
-                </form>
+                </div>
 
 
             </div>
