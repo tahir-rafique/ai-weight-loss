@@ -1,11 +1,11 @@
 import React from 'react'
-import SignIn from './pages/Login/SignIn'
+import SignIn from './pages/login/SignIn'
 import { Route, Routes } from 'react-router-dom'
-import SignUp from './pages/Login/SignUp'
-import PasswordRecover from './pages/Login/PasswordRecover'
-import VerifyCode from './pages/Login/VerifyCode'
-import NewPassword from './pages/Login/NewPassword'
-import Dashborad from './pages/Dashboard/Dashborad'
+import SignUp from './pages/login/SignUp'
+import PasswordRecover from './pages/login/PasswordRecover'
+import VerifyCode from './pages/login/VerifyCode'
+
+import NewPassword from './pages/login/NewPassword'
 import Layout from './pages/Layout'
 import Conversation from './pages/Conversation/Conversation'
 
@@ -14,7 +14,6 @@ function App() {
     <>
 
       <Routes>
-
 
         {/* Login Routes */}
         <Route path='/' element={<SignIn />} />

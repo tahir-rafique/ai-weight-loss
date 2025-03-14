@@ -2,9 +2,12 @@ import React from 'react'
 
 export default function Btn({ title = '',
     className = '',
+    onClick,
 }) {
     return (
-        <div className={`${className} cursor-pointer`}>
+        <div
+            onClick={onClick}
+            className={`${className} cursor-pointer`}>
             {title}
         </div>
     )

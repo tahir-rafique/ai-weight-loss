@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { InputBox } from './../../components/shared/InputBox';
+import { InputBox } from '../../components/shared/InputBox';
 import Btn from '../../components/shared/Btn';
 import logo from '../../assets/icons/mdlogo.webp';
 

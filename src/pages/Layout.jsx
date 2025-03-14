@@ -1,6 +1,6 @@
 import React from 'react'
-import Sidebar from './Sidebar';
-import Dashborad from './Dashboard/Dashborad.jsx';
+import SideBar from './sideBar.jsx';
+import Dashborad from './dashboard/Dashborad.jsx';
 
 const Layout = () => {
     return (
@@ -11,7 +11,7 @@ const Layout = () => {
 
                     {/* SiderBar */}
                     <div>
-                        <Sidebar />
+                        <SideBar />
                     </div>
 
                     {/* Pages condictional rendering on path/location bases  */}
