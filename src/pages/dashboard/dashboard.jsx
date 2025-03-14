@@ -8,13 +8,13 @@ import { FaRegCheckCircle } from "react-icons/fa";
 
 const Dashborad = () => {
   return (
-    <div className=' bg-[var(--color-background)] bg rounded-t-[8px] px-5! py-4! '>
+    <div className=' bg-[var(--color-background)] bg rounded-t-[8px] px-5 py-4 '>
 
       {/* dashboard-top */}
 
-      <div className="dashboard-top flex justify-between pb-10!">
+      <div className="dashboard-top flex justify-between pb-10">
         <h4 className='text-[var(--color-btn)] font-bold'>Dashboard</h4>
-        <div className='rounded-[30px] shadow-md flex gap-2 px-4! py-2! items-center justify-center'>
+        <div className='rounded-[30px] shadow-md flex gap-2 px-4 py-2 items-center justify-center'>
           <GoStopwatch size={30} />
           <IoMdNotificationsOutline size={30} />
           <RxAvatar size={30} />
@@ -26,7 +26,7 @@ const Dashborad = () => {
       <div className="dashboard-main flex flex-col gap-4">
 
         {/* Dash-center */}
-        <div className="dashboard-center shadow-md border-[1px]! border-[var(--color-primary)]! border-b-[10px]! px-10! py-4! myrounded">
+        <div className="dashboard-center shadow-md border-[1px] border-[var(--color-primary)] border-b-[10px] px-10 py-4 myrounded">
 
           <div className='flex justify-between gap-2 '>
             <h4 className='text-[var(--color-btn)] font-semibold'>Today's <span className='text-[var(--color-dark)]'>Goals</span> to Achieve</h4>
@@ -41,7 +41,7 @@ const Dashborad = () => {
           </div>
 
           {/* date */}
-          <div className='w-full flex justify-between pt-8!'>
+          <div className='w-full flex justify-between pt-8'>
             <div className='w-fit'>
               <p>Mon</p>
               <p className='text-[var(--color-btn)] text-center'>1</p>
@@ -118,7 +118,7 @@ const Dashborad = () => {
               <p className='text-[var(--color-btn)] text-center'>14</p>
             </div>
 
-            <div className='w-fit pr-12!'>
+            <div className='w-fit pr-12'>
               <p>Mon</p>
               <p className='text-[var(--color-btn)] text-center'>15</p>
             </div>
@@ -128,24 +128,24 @@ const Dashborad = () => {
           </div>
 
           {/* goal completed */}
-          <div className='py-8! flex flex-col gap-4'>
+          <div className='py-8 flex flex-col gap-4'>
             <div className='w-full flex gap-2'>
 
               <div className='w-[100px] flex items-center'>
                 <h6 className=' text-[var(--color-dark-light)]'>08:30 Am</h6>
               </div>
 
-              <div className='w-[calc(100%-100px)] bg-[var(--color-bg)] rounded-[8px] py-3! px-5! flex flex-col gap-4'>
+              <div className='w-[calc(100%-100px)] bg-[var(--color-bg)] rounded-[8px] py-3 px-5 flex flex-col gap-4'>
                 <div className='flex justify-between items-top gap-2'>
                   <h5 className='font-bold'>Headache Release</h5>
-                  <div className='text-2xl! font-black rounded-full'>...</div>
+                  <div className='text-2xl font-black rounded-full'>...</div>
 
                 </div>
 
                 {/* 1 one */}
                 <div className='flex justify-between items-center gap-2'>
                   <p><span className='text-[var(--color-heading)]'>Duration:</span> 07 days</p>
-                  <div className='flex items-center gap-2 bg-[var(--sec-bg)] px-2! py-1! rounded-[8px]'>
+                  <div className='flex items-center gap-2 bg-[var(--sec-bg)] px-2 py-1 rounded-[8px]'>
                     <FaRegCheckCircle className='text-[var(--text-sec)]' />
                     <p className='text-large font-bold text-[var(--text-sec)]'> Goal completed</p>
                   </div>
@@ -159,16 +159,16 @@ const Dashborad = () => {
                 <h6 className=' text-[var(--color-dark-light)]'>08:30 Am</h6>
               </div>
 
-              <div className='w-[calc(100%-100px)] bg-[var(--color-bg)] rounded-[8px] py-3! px-5! flex flex-col gap-4'>
+              <div className='w-[calc(100%-100px)] bg-[var(--color-bg)] rounded-[8px] py-3 px-5 flex flex-col gap-4'>
                 <div className='flex justify-between items-center gap-2'>
                   <h5 className='font-bold'>Headache Release</h5>
-                  <div className='text-2xl! font-black rounded-full'>...</div>
+                  <div className='text-2xl font-black rounded-full'>...</div>
                 </div>
 
                 {/* 2 div */}
                 <div className='flex justify-between items-center gap-2'>
                   <p><span className='text-[var(--color-heading)]'>Duration:</span> 07 days</p>
-                  <div className='flex items-center gap-2 bg-[var(--sec-bg)] px-2! py-1! rounded-[8px]'>
+                  <div className='flex items-center gap-2 bg-[var(--sec-bg)] px-2 py-1 rounded-[8px]'>
                     <FaRegCheckCircle className='text-[var(--text-sec)]' />
                     <p className='text-large font-bold text-[var(--text-sec)]'> Goal completed</p>
                   </div>
@@ -182,15 +182,15 @@ const Dashborad = () => {
         </div>
 
         {/* Dash-bottom */}
-        <div className="dashboard-bottom shadow-md border-[1px]! border-[var(--color-primary)]! border-b-[10px]! px-10! py-10! myrounded flex items-end gap-4">
+        <div className="dashboard-bottom shadow-md border-[1px] border-[var(--color-primary)] border-b-[10px] px-10 py-10 myrounded flex items-end gap-4">
           <div className='bottom-left'>
             <h4 className='text-[var(--color-btn)]'>Statistics</h4>
             <img src={piechart} alt="no" className='size-50' />
           </div>
 
-          <div className='bottom-right flex justify-between w-full px-10!'>
+          <div className='bottom-right flex justify-between w-full px-10'>
 
-            <div className='shadow-xs shadow-[#FFC6AF] border-[var(--color-primary)]! border-b-[10px]! px-10! py-14! myrounded flex items-center gap-4'>
+            <div className='shadow-xs shadow-[#FFC6AF] border-[var(--color-primary)] border-b-[10px] px-10 py-14 myrounded flex items-center gap-4'>
               <div>
                 <TbSettingsCode size={80}
                   className='text-[var(--color-primary' />
@@ -203,7 +203,7 @@ const Dashborad = () => {
 
             </div>
 
-            <div className='shadow-xs shadow-[#FFC6AF] border-[var(--color-primary)]! border-b-[10px]! px-10! py-14! myrounded flex items-center gap-4'>
+            <div className='shadow-xs shadow-[#FFC6AF] border-[var(--color-primary)] border-b-[10px] px-10 py-14 myrounded flex items-center gap-4'>
               <div>
                 <TbSettingsCode size={80} className='text-[var(--color-uniq)] ' />
               </div>
@@ -217,7 +217,7 @@ const Dashborad = () => {
 
 
 
-            <div className='shadow-xs shadow-[#FFC6AF] border-[var(--color-primary)]! border-b-[10px]! px-10! py-14! myrounded flex items-center gap-4'>
+            <div className='shadow-xs shadow-[#FFC6AF] border-[var(--color-primary)] border-b-[10px] px-10 py-14 myrounded flex items-center gap-4'>
               <div>
                 <TbSettingsCode size={80} className='text-[var(--color-heading)] ' />
               </div>

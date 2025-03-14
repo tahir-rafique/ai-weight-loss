@@ -6,8 +6,10 @@ import PasswordRecover from './pages/login/PasswordRecover'
 import VerifyCode from './pages/login/VerifyCode'
 
 import NewPassword from './pages/login/NewPassword'
-import Layout from './pages/Layout'
-import Conversation from './pages/Conversation/Conversation'
+// import Layout from './pages/Layout'
+import Conversation from './pages/conversation/conversation'
+import Dashborad from './pages/dashboard/dashboard'
+import Notfication from './components/shared/CheckBoxNotfication'
 
 function App() {
   return (
@@ -22,11 +24,21 @@ function App() {
         <Route path='/verify-code' element={<VerifyCode />} />
         <Route path='/new-password' element={<NewPassword />} />
 
+        {/* Layout 😂😂😂 need to fix it */}
+        {/* <Route path='layout' element={Layout}/> */}
+
+        {/* Notfication */}
+        <Route path='/notfication' element={<Notfication />} />
+
         {/* Dashboard */}
-        <Route path='layout' element={<Layout />} />
+        <Route path='dashboard' element={<Dashborad />} />
+
+
 
         {/* Conversation  */}
         <Route path='conversation' element={<Conversation />} />
+
+        {/*  */}
 
 
       </Routes >
