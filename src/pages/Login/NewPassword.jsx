@@ -12,7 +12,7 @@ const NewPassword = () => {
         <>
             <div className='w-full'>
                 <a href="/" className='cursor-pointer'>
-                    <img src={logo} alt="no" className='w-60 py-10 px-10' />
+                    <img src={logo} alt="no" className='w-60 pt-5 px-10' />
                 </a>
             </div>
 
@@ -20,11 +20,11 @@ const NewPassword = () => {
 
                 <h1 className='text-center font-semibold'>Set New Password</h1>
 
-                <div className='bg-[url(../assets/icons/login/subtract.svg)]  bg-no-repeat  w-full bg-center h-full py-30 pb-50 relative'  >
+                <div className='bg-[url(../assets/icons/login/subtract.svg)]  bg-no-repeat  w-full bg-center h-full py-18 pb-50 relative'  >
                     <form
                         onSubmit={(e) => { e.preventDefault() }}>
 
-                        <div className='flex flex-col gap-4 py-5 items-center'>
+                        <div className='flex flex-col gap-4 py-10 items-center'>
 
                             <InputBox
                                 passIcon={passEyeClose}

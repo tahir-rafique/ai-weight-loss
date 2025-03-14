@@ -13,7 +13,7 @@ const PasswordRecover = () => {
         <>
             <div className='w-full'>
                 <Link to="/" className='cursor-pointer'>
-                    <img src={logo} alt="no" className='w-60 py-8 px-10' />
+                    <img src={logo} alt="no" className='w-60 pt-5 px-10' />
                 </Link>
             </div>
 
@@ -27,7 +27,7 @@ const PasswordRecover = () => {
                             e.preventDefault()
                         }}>
 
-                        <div className='flex flex-col gap-4 py-20 items-center'>
+                        <div className='flex flex-col gap-4 py-15 items-center'>
 
                             <InputBox
                                 className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] '
