@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal } from 'antd';
-import { InputBox } from './../../components/InputBox';
+import { InputBox } from '../../components/shared/InputBox';
 import sandclock from '../../assets/icons/conversation/sand-clock.svg'
 import searchicon from '../../assets/icons/conversation/search-icon.webp'
 import clock from '../../assets/icons/conversation/clock.webp'
@@ -36,7 +36,9 @@ const Conversation = () => {
 
     return (
         <div className='bg-[var(--color-bg)] h-screen w-screen lg:pt-20 lg:pr-5 lg:pl-25 lg:pb-5'>
-            <button className='fixed top-10 left-10'>
+
+            {/* back button */}
+            <button className='fixed top-10 left-10 cursor-pointer'>
                 <img src={arrowcircleup} alt="" />
             </button>
 
@@ -124,7 +126,7 @@ const Conversation = () => {
 
 
                     {/* middel */}
-                    <img src={mdicon} alt="no image" className='h-full absolute left-[50%] translate-[-50%]  top-[50%] opacity-20 max-[1600px]:size-40  max-[1600px]:top-[65%] size-80  -z-100' />
+                    <img src={mdicon} alt="no image" className='h-full absolute left-[50%] translate-[-50%]  top-[50%] opacity-20 max-[1600px]:size-60  size-80  -z-100' />
 
 
 

@@ -1,10 +1,14 @@
 import React from 'react'
 
 export const InputBox = ({
-    className ='',
+    className = '',
     label = '',
-    placeholder= '',
+    placeholder = '',
     icon,
+    passIcon,
+    handelClick,
+    type,
+
 
 }) => {
     return (
@@ -12,7 +16,8 @@ export const InputBox = ({
             <label htmlFor="email" className='text-[14px]' >{label}</label>
             <div className={`${className} `}>
                 <img src={icon} alt="" />
-                <input type="email" id='email' placeholder={placeholder} className='w-full' />
+                <input type="email" id='email' placeholder={placeholder} className='w-full' type={type} />
+                <img src={passIcon} alt="" className='cursor-pointer' onClick={handelClick} />
             </div>
         </div>
     )

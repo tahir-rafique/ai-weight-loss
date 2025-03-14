@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Btn from './../components/Btn';
+import Btn from './../components/shared/Btn';
 import { MdDashboard } from "react-icons/md";
 import { BsFillChatSquareTextFill } from "react-icons/bs";
 import { RiUserCommunityLine } from "react-icons/ri";

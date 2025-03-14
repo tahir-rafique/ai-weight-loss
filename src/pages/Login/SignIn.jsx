@@ -1,47 +1,72 @@
-import React from 'react'
-import { InputBox } from './../../components/InputBox';
-import Btn from '../../components/Btn';
-import logo from '../../assets/icons/logo.png'
+import React, { useState } from 'react'
+import { InputBox } from './../../components/shared/InputBox';
+import Btn from '../../components/shared/Btn';
+import logo from '../../assets/icons/mdlogo.webp';
+
+import passEyeClose from '../../assets/icons/login/passEyeClose.svg';
+
+
+
 import { Link } from 'react-router-dom';
 
 function SignIn() {
+
+  // password show 
+  const [show, setShow] = useState(false);
+  const handelClickEye = () => {
+    setShow(show)
+  }
+
   return (
 
     <>
-
       <div className='w-full'>
-        <a href="/" className='cursor-pointer'>
-          <img src={logo} alt="no" className='w-60 py-10! px-10!' />
-        </a>
+        <Link to="/" className='cursor-pointer'>
+          <img src={logo} alt="no" className='w-60 py-10 px-10' />
+        </Link>
       </div>
 
-      <div className='bg-[var(--color-background)] flex flex-col items-center  h-[100vh] w-full'>
+      <div className='bg-[var(--color-background)] flex flex-col gap-2 items-center h-full w-full'>
 
         <h1 className='text-center font-semibold'>Sign in</h1>
 
-        <form action="" onSubmit={(e) => {
-          e.preventDefault()
-        }}>
+        {/* bg-image-tailwind */}
+        <div className=' bg-[url(../assets/icons/login/subtract.svg)]  bg-no-repeat  w-full bg-center h-full py-30 pb-50'  >
 
-          <div className='flex flex-col gap-4 py-20! items-center '>
+          <form
+            className=''
+            action=""
+            onSubmit={(e) => { e.preventDefault() }}
+          >
 
+            <div className='flex flex-col gap-5  items-center max-w-[320px] mx-auto'>
 
-            <InputBox className='bg-[var(--color-bg-light)] px-4! py-3!  rounded-[8px] w-[318px] ' label='Email address' placeholder='Enter your email address' />
+              <InputBox
+                className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] '
+                label='Email address'
+                placeholder='Enter your email address'
+                type='email'
+              />
 
-            <InputBox className='bg-[var(--color-bg-light)] px-4! py-3!  rounded-[8px] w-[318px] max-w-full' label='Password' placeholder='Enter your password' />
+              <InputBox className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] max-w-full flex items-center gap-1'
+                label='Password'
+                placeholder='Enter your password'
+                handelClick={handelClickEye}
+                type={show ? 'text' : 'password'}
+                passIcon={passEyeClose}
+              />
 
-            <Btn title='Sign in' className='bg-[var(--color-btn)] px-10! py-3! rounded-[8px] font-semibold w-[318px] flex justify-center items-center shadow-md' />
+              <Btn title='Sign in' className='bg-[var(--color-btn)] px-10 py-3 rounded-[8px] font-semibold w-[318px] flex justify-center items-center drop-shadow-lg' />
 
+              <div className='flex justify-between gap-5 w-full'>
+                <Link to="password-recover">  <p className='text-xs'>Forgot your password?</p></Link>
 
+                <Link to="sign-up"> <p className='text-xs text-[var(--color-heading)] underline'>Sign up</p> </Link>
+              </div>
 
-            <div className='flex justify-between w-full gap-5'>
-              <a href="/recover-password">  <p className='text-xs'>Forgot your password?</p></a>
-
-              <Link to="sign-up"> <p className='text-xs text-[var(--color-heading)] underline!'>Sign up</p> </Link>
             </div>
-          </div>
-        </form>
-
+          </form>
+        </div>
 
       </div>
     </>

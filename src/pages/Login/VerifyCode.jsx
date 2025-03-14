@@ -1,8 +1,7 @@
 import React from 'react'
-import { InputBox } from '../../components/InputBox';
-import Btn from '../../components/Btn';
-import logo from '../../assets/icons/logo.png'
-import { Link } from 'react-router-dom';
+import { InputBox } from '../../components/shared/InputBox';
+import Btn from '../../components/shared/Btn';
+import logo from '../../assets/icons/mdlogo.webp'
 
 const VerifyCode = () => {
     return (
