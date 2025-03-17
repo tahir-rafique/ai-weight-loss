@@ -12,7 +12,7 @@ import community from '../assets/icons/sidebar/community.webp'
 const SideBar = () => {
     const navigate = useNavigate()
     return (
-        <div className='sidebar bg-[var(--color-bg-white)] flex flex-col  rounded-[8px] h-full w-full'>
+        <div className='sidebar bg-[var(--color-bg-white)] flex flex-col rounded-tl-[8px] rounded-bl-[8px]  h-full w-full'>
 
             <div className='flex flex-col justify-between h-full w-full p-3'>
 

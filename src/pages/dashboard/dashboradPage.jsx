@@ -12,13 +12,15 @@ const DashboradPage = () => {
                 <div>
                     <img src={mdlogo} alt="" className='h-[60px]' />
                 </div>
-                <div className='rounded-tl-lg rounded-bl-[8px]  h-[calc(100%_-_60px)]'>
+                <div className='h-[calc(100%_-_60px)]'>
                     <SideBar />
                 </div>
             </div>
 
             {/* main */}
-            <div className="rounded-e-[8px] rounded-tl-[8px] w-full ">
+            <div className="w-[calc(100%_-_260px)] relative">
+                {/* inverted-border */}
+                <div className="inverted-radius"></div>
                 <Dashborad />
             </div>
         </div>
