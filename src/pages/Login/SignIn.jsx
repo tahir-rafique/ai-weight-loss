@@ -51,9 +51,9 @@ function SignIn() {
               <InputBox className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] max-w-full flex items-center gap-1'
                 label='Password'
                 placeholder='Enter your password'
-                handelClick={handelClickEye}
-                type={show ? 'text' : 'password'}
                 passIcon={passEyeClose}
+                handelClick={handelClickEye}
+                typepass={show ? 'text' : 'password'}
               />
 
               <Btn title='Sign in' className='bg-[var(--color-btn)] px-10 py-3 rounded-[8px] font-semibold w-[318px] flex justify-center items-center drop-shadow-lg' />

@@ -20,16 +20,16 @@ function SignUp() {
     <>
 
       <div className='w-full'>
-        <a href="/" className='cursor-pointer'>
-          <img src={logo} alt="no" className='w-60 py-10 px-10' />
-        </a>
+        <Link to="/" className='cursor-pointer'>
+          <img src={logo} alt="no" className='w-60 pt-5 px-10' />
+        </Link>
       </div>
 
       <div className='bg-[var(--color-background)] flex flex-col gap-2 items-center h-full w-full'>
 
         <h1 className='text-center font-semibold'>Sign up</h1>
 
-        <div className='bg-[url(../assets/icons/login/subtract.svg)]  bg-no-repeat  w-full bg-center h-full py-17 pb-44'>
+        <div className='bg-[url(../assets/icons/login/subtract.svg)]  bg-no-repeat  w-full bg-center h-full py-15 pb-44'>
 
           <form
             action=""
@@ -49,7 +49,7 @@ function SignUp() {
                 placeholder='Enter your password'
                 passIcon={passEyeClose}
                 handelClick={handelClickEye}
-                type={show ? 'text' : 'password'}
+                typepass={show ? 'text' : 'password'}
 
               />
 
@@ -58,7 +58,7 @@ function SignUp() {
                 placeholder='Confirm your password'
                 passIcon={passEyeClose}
                 handelClick={handelClickEye}
-                type={show ? 'text' : 'password'}
+                typepass={show ? 'text' : 'password'}
 
               />
 

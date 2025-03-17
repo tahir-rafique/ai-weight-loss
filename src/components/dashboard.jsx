@@ -8,11 +8,11 @@ import { FaRegCheckCircle } from "react-icons/fa";
 
 const Dashborad = () => {
   return (
-    <div className=' bg-[var(--color-background)] bg rounded-t-[8px] px-5 py-4 '>
+    <div className='bg-[var(--color-bg)] relative z-100 rounded-[8px] px-5 py-4 '>
 
       {/* dashboard-top */}
 
-      <div className="dashboard-top flex justify-between pb-10">
+      <div className="dashboard-top flex justify-between pb-5">
         <h4 className='text-[var(--color-btn)] font-bold'>Dashboard</h4>
         <div className='rounded-[30px] shadow-md flex gap-2 px-4 py-2 items-center justify-center'>
           <GoStopwatch size={30} />
@@ -26,12 +26,12 @@ const Dashborad = () => {
       <div className="dashboard-main flex flex-col gap-4">
 
         {/* Dash-center */}
-        <div className="dashboard-center shadow-md border-[1px] border-[var(--color-primary)] border-b-[10px] px-10 py-4 myrounded">
+        <div className="dashboard-center shadow-md border-[1px] border-[var(--color-primary)] border-b-[10px] px-10 py-2 myrounded">
 
           <div className='flex justify-between gap-2 '>
             <h4 className='text-[var(--color-btn)] font-semibold'>Today's <span className='text-[var(--color-dark)]'>Goals</span> to Achieve</h4>
 
-            <div className='flex items-center gap-4'>
+            <div className='flex items-center gap-2'>
               <p className='text-xs font-semibold'>Nov (2024)</p>
               <div className='flex gap-2 items-center'>
                 <button>--</button>
@@ -41,7 +41,7 @@ const Dashborad = () => {
           </div>
 
           {/* date */}
-          <div className='w-full flex justify-between pt-8'>
+          <div className='w-full flex justify-between pt-4'>
             <div className='w-fit'>
               <p>Mon</p>
               <p className='text-[var(--color-btn)] text-center'>1</p>
@@ -182,7 +182,7 @@ const Dashborad = () => {
         </div>
 
         {/* Dash-bottom */}
-        <div className="dashboard-bottom shadow-md border-[1px] border-[var(--color-primary)] border-b-[10px] px-10 py-10 myrounded flex items-end gap-4">
+        <div className="dashboard-bottom shadow-md border-[1px] border-[var(--color-primary)] border-b-[10px] px-10 py-5 myrounded flex items-end gap-4">
           <div className='bottom-left'>
             <h4 className='text-[var(--color-btn)]'>Statistics</h4>
             <img src={piechart} alt="no" className='size-50' />
@@ -235,6 +235,8 @@ const Dashborad = () => {
         </div>
       </div>
     </div>
+
+
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Btn from '../components/shared/Btn';
+import Btn from './shared/Btn';
 import { MdDashboard } from "react-icons/md";
 import { BsFillChatSquareTextFill } from "react-icons/bs";
 import { RiUserCommunityLine } from "react-icons/ri";
@@ -11,9 +11,9 @@ import { TbSettingsCode } from "react-icons/tb";
 
 const SideBar = () => {
     return (
-        <div className='sidebar px-4  flex flex-col  h-full rounded-t-[8px]  w-[220px]'>
+        <div className='sidebar bg-[var(--color-bg)] flex flex-col  rounded-[8px] h-full'>
 
-            <div className='flex flex-col justify-between h-full pb-5'>
+            <div className='flex flex-col justify-between gap-120'>
 
 
                 <div className='sidebar-links flex flex-col gap-y-3 pt-2 text-[var(--color-dark-light)]'>
