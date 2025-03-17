@@ -2,21 +2,21 @@ import React from 'react'
 import { InputBox } from '../../components/shared/InputBox';
 import Btn from '../../components/shared/Btn';
 import logo from '../../assets/icons/mdlogo.webp'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import passEyeClose from '../../assets/icons/login/passEyeClose.svg';
 
 
 const NewPassword = () => {
     const navigate = useNavigate()
     return (
-        <>
+        <div className='bg-[var(--color-background)]  p-5'>
             <div className='w-full'>
-                <a href="/" className='cursor-pointer'>
+                <Link to="/" className='cursor-pointer'>
                     <img src={logo} alt="no" className='w-60 pt-5 px-10' />
-                </a>
+                </Link>
             </div>
 
-            <div className='bg-[var(--color-background)] flex flex-col gap-2 items-center  h-full w-full'>
+            <div className='flex flex-col gap-2 items-center  h-full w-full'>
 
                 <h1 className='text-center font-semibold'>Set New Password</h1>
 
@@ -38,11 +38,13 @@ const NewPassword = () => {
                                 className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] flex gap-1'
                                 label='Confirm New Password'
                                 placeholder='Enter your password'
+                                type='password'
                             />
 
                             <Btn
                                 title='Continue'
                                 className='bg-[var(--color-btn)] px-10 py-3 rounded-[8px] font-semibold w-[318px] flex justify-center items-center shadow-md'
+                                onClick={() => {navigate('/dashboard-page')}}
                             />
                         </div>
                     </form>
@@ -63,7 +65,7 @@ const NewPassword = () => {
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

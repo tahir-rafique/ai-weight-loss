@@ -10,14 +10,14 @@ const PasswordRecover = () => {
     const navigate = useNavigate('');
 
     return (
-        <>
+        <div className='bg-[var(--color-background)]  p-5'>
             <div className='w-full'>
                 <Link to="/" className='cursor-pointer'>
                     <img src={logo} alt="no" className='w-60 pt-5 px-10' />
                 </Link>
             </div>
 
-            <div className='bg-[var(--color-background)] flex flex-col gap-2 items-center h-full w-full'>
+            <div className='flex flex-col gap-2 items-center h-full w-full'>
 
                 <h1 className='text-center font-semibold'>Password Recovery</h1>
 
@@ -63,7 +63,7 @@ const PasswordRecover = () => {
 
 
             </div>
-        </>
+        </div>
     )
 }
 

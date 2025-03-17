@@ -1,54 +1,54 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import Btn from './shared/Btn';
-import { MdDashboard } from "react-icons/md";
-import { BsFillChatSquareTextFill } from "react-icons/bs";
-import { RiUserCommunityLine } from "react-icons/ri";
-import { LuGoal } from "react-icons/lu";
+import dashboard from '../assets/icons/sidebar/dashboard.webp'
+import aichat from '../assets/icons/sidebar/ai-chat.webp'
+import setting from '../assets/icons/sidebar/setting.webp'
+import goal from '../assets/icons/sidebar/goal.webp'
+import community from '../assets/icons/sidebar/community.webp'
 
 
-import { TbSettingsCode } from "react-icons/tb";
 
 const SideBar = () => {
+    const navigate = useNavigate()
     return (
-        <div className='sidebar bg-[var(--color-bg)] flex flex-col  rounded-[8px] h-full'>
+        <div className='sidebar bg-[var(--color-bg-white)] flex flex-col  rounded-[8px] h-full w-full'>
 
-            <div className='flex flex-col justify-between gap-120'>
+            <div className='flex flex-col justify-between h-full w-full p-3'>
 
-
-                <div className='sidebar-links flex flex-col gap-y-3 pt-2 text-[var(--color-dark-light)]'>
-                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 items-center hover:shadow-md  rounded-[8px] px-2 py-2` }>
-                        <MdDashboard size={26} />
-                        Dashboard
+                <div className='sidebar-links flex flex-col gap-y-2  text-[var(--color-dark-light)]'>
+                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 items-center hover:shadow-md  rounded-[8px] px-4 py-3`}>
+                        <img src={dashboard} alt="" />
+                        <p className='font-medium'> Dashboard  </p>
                     </NavLink>
 
-                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 items-center hover:shadow-md rounded-[8px] px-2 py-2`}>
-                        <BsFillChatSquareTextFill size={22} />
-                        AI Health Coach
+                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 items-center hover:shadow-md rounded-[8px] px-4 py-3`}>
+                        <img src={aichat} alt="" />
+                        <p className='font-medium'>  AI Health Coach  </p>
+
                     </NavLink>
 
-                    <NavLink to='' className={`hover:text-[var(--color-btn)]  flex gap-2 hover:shadow-md rounded-[8px] px-2 py-2`}>
-                        <LuGoal size={22} />
-
-                        Goals
+                    <NavLink to='' className={`hover:text-[var(--color-btn)]  flex gap-2 hover:shadow-md rounded-[8px] px-4 py-3`}>
+                        <img src={goal} alt="" />
+                        <p className='font-medium'>  Goals  </p>
                     </NavLink>
 
-                    <NavLink to='' className={`hover:text-[var(--color-btn)]  flex gap-2 hover:shadow-md rounded-[8px] px-2 py-2`}>
-                        <RiUserCommunityLine size={22} />
-
-                        Community
+                    <NavLink to='' className={`hover:text-[var(--color-btn)]  flex gap-2 hover:shadow-md rounded-[8px] px-4 py-3`}>
+                        <img src={community} alt="" />
+                        <p className='font-medium'>  Community  </p>
                     </NavLink>
 
-                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 hover:shadow-md rounded-[8px] px-2 py-2`}>
-                        <TbSettingsCode size={22} />
-
-                        Settings
+                    <NavLink to='' className={`hover:text-[var(--color-btn)] flex gap-2 hover:shadow-md rounded-[8px] px-4 py-3`}>
+                        <img src={setting} alt="" />
+                        <p className='font-medium'>  Settings  </p>
                     </NavLink>
-
 
                 </div>
+
                 <div>
-                    <Btn title='Logout' className='border border-[var(--color-btn)] text-center rounded-[8px] py-2 text-[var(--color-btn)] ' />
+                    <Btn title='Logout' className='border border-[var(--color-btn)] font-medium text-center rounded-[8px] py-2 text-[var(--color-btn)]'
+                        onClick={() => { navigate('/') }}
+                    />
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ import passEyeClose from '../../assets/icons/login/passEyeClose.svg';
 
 
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function SignIn() {
 
@@ -17,28 +17,26 @@ function SignIn() {
     setShow(show)
   }
 
+  const navigate = useNavigate()
   return (
 
-    <>
+    <div className='bg-[var(--color-background)]  p-5'>
       <div className='w-full'>
         <Link to="/" className='cursor-pointer'>
           <img src={logo} alt="no" className='w-60 pt-5 px-10' />
         </Link>
       </div>
 
-      <div className='bg-[var(--color-background)] flex flex-col gap-2 items-center h-full w-full'>
+      <div className='flex flex-col gap-2 items-center'>
 
         <h1 className='text-center font-semibold'>Sign in</h1>
 
-        {/* bg-image-tailwind */}
         <div className=' bg-[url(../assets/icons/login/subtract.svg)]  bg-no-repeat  w-full bg-center h-full py-30 pb-50'  >
-
           <form
             className=''
             action=""
             onSubmit={(e) => { e.preventDefault() }}
           >
-
             <div className='flex flex-col gap-4  items-center max-w-[320px] mx-auto'>
 
               <InputBox
@@ -53,14 +51,16 @@ function SignIn() {
                 placeholder='Enter your password'
                 passIcon={passEyeClose}
                 handelClick={handelClickEye}
-                typepass={show ? 'text' : 'password'}
+                type={show ? 'text' : 'password'}
               />
 
-              <Btn title='Sign in' className='bg-[var(--color-btn)] px-10 py-3 rounded-[8px] font-semibold w-[318px] flex justify-center items-center drop-shadow-lg' />
+              <Btn title='Sign in'
+                className='bg-[var(--color-btn)] px-10 py-3 rounded-[8px] font-semibold w-[318px] flex justify-center items-center drop-shadow-lg'
+                onClick={() => { navigate('/dashboard-page') }}
+              />
 
               <div className='flex justify-between gap-5 w-full'>
                 <Link to="recover-password">  <p className='text-xs'>Forgot your password?</p></Link>
-
                 <Link to="sign-up"> <p className='text-xs text-[var(--color-heading)] underline'>Sign up</p> </Link>
               </div>
 
@@ -69,7 +69,7 @@ function SignIn() {
         </div>
 
       </div>
-    </>
+    </div>
   )
 }
 

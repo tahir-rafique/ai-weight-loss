@@ -10,7 +10,7 @@ const VerifyCode = () => {
     const navigate = useNavigate()
 
     return (
-        <>
+        <div className='bg-[var(--color-background)]  p-5'>
 
             <div className='w-full'>
                 <Link to="/" className='cursor-pointer'>
@@ -18,7 +18,7 @@ const VerifyCode = () => {
                 </Link>
             </div>
 
-            <div className='bg-[var(--color-background)] flex flex-col gap-2 items-center  h-full w-full'>
+            <div className=' flex flex-col gap-2 items-center  h-full w-full'>
 
 
                 <h1 className='text-center font-semibold'>Verify Code</h1>
@@ -31,7 +31,11 @@ const VerifyCode = () => {
 
                         <div className='flex flex-col gap-4 py-15 items-center'>
 
-                            <InputBox className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] ' label='Verification Code' placeholder='Enter your Varification Code' />
+                            <InputBox
+                                className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] ' label='Verification Code'
+                                placeholder='Enter your Varification Code'
+                                type='number'
+                            />
 
 
                             <Btn title='Continue'
@@ -59,7 +63,7 @@ const VerifyCode = () => {
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }
 

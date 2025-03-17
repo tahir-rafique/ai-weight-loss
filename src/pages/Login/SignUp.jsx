@@ -17,7 +17,7 @@ function SignUp() {
   }
   return (
 
-    <>
+    <div className='p-5 bg-[var(--color-background)] '>
 
       <div className='w-full'>
         <Link to="/" className='cursor-pointer'>
@@ -25,7 +25,7 @@ function SignUp() {
         </Link>
       </div>
 
-      <div className='bg-[var(--color-background)] flex flex-col gap-2 items-center h-full w-full'>
+      <div className='flex flex-col gap-2 items-center'>
 
         <h1 className='text-center font-semibold'>Sign up</h1>
 
@@ -49,7 +49,7 @@ function SignUp() {
                 placeholder='Enter your password'
                 passIcon={passEyeClose}
                 handelClick={handelClickEye}
-                typepass={show ? 'text' : 'password'}
+                type={show ? 'text' : 'password'}
 
               />
 
@@ -58,7 +58,7 @@ function SignUp() {
                 placeholder='Confirm your password'
                 passIcon={passEyeClose}
                 handelClick={handelClickEye}
-                typepass={show ? 'text' : 'password'}
+                type={show ? 'text' : 'password'}
 
               />
 
@@ -76,7 +76,7 @@ function SignUp() {
 
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
