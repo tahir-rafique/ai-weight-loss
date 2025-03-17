@@ -1,9 +1,15 @@
-// fonts
+// fonts & typography
 @use "./base/fonts";
-
-// --------------------------------------
-@use "./base/_colors";
 @use "./base/_typography";
+
+// colors
+@use "./base/_colors";
+
+// rest
 @use "./base/rest";
+
+// components
+// --------------------------------------
 @use "./components/_sidebar.scss";
-@use './components/_modal'
+@use "./components/_modal";
+@use "./components/_dashboard";

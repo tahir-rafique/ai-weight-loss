@@ -12,56 +12,297 @@
   src: url(/src/assets/fonts/avenirBlack.otf) format("opentype");
 }
 body {
-  font-family: "Manrope";
-}
-
-body {
   --color-primary: #ffc6af;
+  --color-bg-white: #fff;
+  --color-bg: #fff4ef;
   --color-btn: #fcc378;
   --color-bg-light: #fff4ef;
-  --color-bg: #ffe8df;
+  --color-dim: #a4a7a61e;
   --color-heading: #f16a77;
   --color-dark: #282828;
-  --color-dark-light: #2828284d;
+  --color-dark-light: rgba(40, 40, 40, 0.2);
+  --color-border: #F7F7F7;
   --color-black-theme: #000000;
+  --text-light: #838383;
+  --text-sec: #02d86d;
+  --sec-bg: #02d86d1a;
+  --color-uniq: #86ffcf;
 }
 
 * {
-  font-family: "Monrape";
-  line-height: normal;
+  font-family: "Manrope";
 }
 
-body {
-  background-color: var(--color-black-theme);
-  color: var(--color-bg);
-}
 body h1 {
   font-size: 44px;
+  font-family: "Manrope";
 }
 body h2 {
   font-size: 34px;
+  font-family: "Manrope";
 }
 body h3 {
   font-size: 30px;
+  font-family: "Manrope";
 }
 body h4 {
   font-size: 24px;
+  font-family: "Manrope";
 }
 body h5 {
   font-size: 22px;
+  font-family: "Manrope";
 }
 body h6 {
   font-size: 20px;
+  font-family: "Manrope";
 }
 body p {
-  font-size: 16px;
+  font-size: 18px;
+  font-family: "Manrope";
 }
 body .text-large {
-  font-size: 18px;
+  font-size: 16px;
 }
 body .text-small {
   font-size: 14px;
 }
 body .text-xs {
   font-size: 12px;
+}
+body .font-secondary {
+  font-family: "Avenir Light";
+}
+body .font-secondary-m {
+  font-family: "Avenir Medium";
+}
+body .font-secondary-b {
+  font-family: "Avenir Black";
+}
+
+.myrounded {
+  border-radius: 8px;
+}
+
+* {
+  line-height: normal;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+.row,
+.col,
+.nav-item,
+.nav-link,
+.navbar-brand {
+  outline: 0;
+  font-size: unset;
+}
+
+.row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+input::-webkit-inner-spin-button {
+  display: none;
+}
+input::-webkit-outer-spin-button {
+  display: none;
+}
+
+input:-internal-autofill-selected {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.ant-modal-wrap {
+  background-color: rgba(255, 254, 254, 0.4745098039);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  overflow: hidden;
+}
+
+.ant-modal {
+  width: 900px !important;
+}
+.ant-modal .ant-modal-content {
+  border: 1px solid rgb(234, 234, 234);
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 35px 0px;
+  border-bottom: 10px solid #ffc6af;
+}
+.ant-modal .ant-modal-content .ant-modal-body {
+  background-color: transparent;
+}
+.ant-modal .ant-modal-content .inner-content ::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+.ant-modal .ant-modal-content .inner-content::-webkit-scrollbar {
+  width: 7px;
+}
+.ant-modal .ant-modal-content .inner-content::-webkit-scrollbar ::-webkit-scrollbar {
+  height: 10px;
+}
+.ant-modal .ant-modal-content .inner-content::-webkit-scrollbar-thumb {
+  background: var(--color-btn);
+  border-radius: 15px;
+}
+.ant-modal .ant-modal-content .ant-modal-close {
+  top: 2px;
+  inset-inline-end: 5px;
+}
+.ant-modal .ant-modal-content .ant-modal-close .anticon svg {
+  width: 15px;
+  height: 15px;
+  color: #fcc378;
+}
+.ant-modal .ant-modal-header {
+  display: none;
+}
+.ant-modal .ant-modal-footer {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .ant-modal .ant-modal-content {
+    padding: 20px 0px;
+    border-radius: 15px;
+  }
+  .ant-modal .ant-modal-content .ant-modal-body {
+    color: rebeccapurple;
+  }
 }/*# sourceMappingURL=main.css.map */

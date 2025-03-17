@@ -1,0 +1,33 @@
+.dash-icons {
+  .clock {
+    position: relative;
+    span {
+      display: none;
+    }
+  }
+
+  .clock:hover {
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 55px;
+      left: -10px;
+      border-radius: 8px;
+      padding: 4px 8px;
+      background-color: var(--color-bg-white);
+
+      filter: drop-shadow(0.5px 0.5px 1px #a4a7a678);
+    }
+
+    span::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: -14px;
+      border-width: 6px;
+      border-style: solid;
+      border-color: transparent transparent var(--color-bg-white) transparent;
+    }
+  }
+}
