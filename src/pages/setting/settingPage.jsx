@@ -2,39 +2,28 @@ import React, { useState } from 'react'
 import mdlogo from '../../assets/icons/mdlogo.webp'
 import { Link } from 'react-router-dom'
 import SideBar from '../../components/sideBar'
-
 import notfication from '../../assets/icons/dashboard/notfication.svg'
 import userImg from '../../assets/icons/dashboard/userImg.svg'
 import SwitchNotfication from './../../components/shared/SwitchNotfication';
 import { InputBox } from './../../components/shared/InputBox';
-
 import imgSelectIcon from '../../assets/icons/settings/selecImg.svg'
 import Btn from '../../components/shared/Btn'
-
 import passEyeClose from '../../assets/icons/login/passEyeClose.svg';
-
-
-
 
 const SettingPage = () => {
     const [selectedButton, setSelectedButton] = useState("general")
-
     const [show, setShow] = useState(false);
     const handelClickEye = () => {
         setShow(!show)
     }
-
-   
-
     return (
-
         <div className='p-5 bg-[var(--color-bg)] h-screen w-screen flex'>
             {/* sidebar */}
             <div className="sidebar overflow-y-auto w-[260px] h-full">
                 <Link to='/'>
                     <img src={mdlogo} alt="" className='h-[60px]' />
                 </Link>
-                <div className='sidebar h-[calc(100%_-_60px)]'>
+                <div className=' h-[calc(100%_-_60px)]'>
                     <SideBar />
                 </div>
             </div>
@@ -79,6 +68,8 @@ const SettingPage = () => {
 
                             {/* setting-sections */}
                             <div className="setting-sections">
+                                {/* general setting */}
+
                                 {selectedButton === 'general' &&
                                     <div className='general-setting flex flex-col gap-y-[42px]'>
                                         <div className='flex flex-col gap-4'>
@@ -106,6 +97,7 @@ const SettingPage = () => {
                                     </div>
                                 }
 
+                                {/* profile setting */}
 
                                 {selectedButton === 'profile-setting' &&
                                     <div className='profile-setting flex flex-col gap-[30px]'>
@@ -157,16 +149,15 @@ const SettingPage = () => {
                                         </div>
 
                                     </div>
-
                                 }
 
+                                {/* securtiy setting */}
 
                                 {selectedButton === 'security-setting' &&
                                     <div className='security-setting flex flex-col gap-[30px]'>
                                         <h4 className=' capitalize'> <span className='text-[var(--color-heading)]'>Security</span> Setting</h4>
 
                                         <div className=' flex flex-col gap-4 '>
-
 
                                             <InputBox className='bg-[var(--color-bg)] px-4 py-3 max-w-[400px]  rounded-[8px] flex items-center'
                                                 label='Old Password'
@@ -195,11 +186,6 @@ const SettingPage = () => {
                                                 type={show ? 'text' : 'password'}
 
                                             />
-
-
-
-
-
                                         </div>
 
                                         <div className='flex gap-4 justify-between max-w-[400px]'>

@@ -8,6 +8,8 @@ import NewPassword from './pages/login/NewPassword'
 import Conversation from './pages/conversation/conversation'
 import DashboradPage from './pages/dashboard/dashboradPage'
 import SettingPage from './pages/setting/settingPage'
+import GoalPage from './pages/goal/goalPage'
+import CommunityPage from './pages/community/communityPage'
 
 function App() {
   return (
@@ -26,13 +28,14 @@ function App() {
         {/* Dashboard */}
         <Route path='dashboard-page' element={<DashboradPage />} />
 
+        {/* ai-chat / Conversation  */}
+        <Route path='/conversation-page' element={<Conversation />} />
 
+        {/* goals  */}
+        <Route path='/goals-page' element={<GoalPage />} />
 
-
-
-
-        {/* Conversation  */}
-        <Route path='conversation-page' element={<Conversation />} />
+        {/* community  */}
+        <Route path='/community-page' element={<CommunityPage />} />
 
 
         {/* Setting */}
