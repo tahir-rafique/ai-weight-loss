@@ -38,13 +38,13 @@ function SignUp() {
             <div className='flex flex-col gap-4 items-center w-[320px] mx-auto'>
 
               <InputBox
-                className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] '
+                className='bg-[var(--color-bg)] px-4 py-3  rounded-[8px] w-[318px] '
                 label='Email address'
                 placeholder='Enter your email address'
                 type='email'
               />
 
-              <InputBox className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] max-w-full flex items-center'
+              <InputBox className='bg-[var(--color-bg)] px-4 py-3  rounded-[8px] w-[318px] max-w-full flex items-center'
                 label='Password'
                 placeholder='Enter your password'
                 passIcon={passEyeClose}
@@ -53,7 +53,7 @@ function SignUp() {
 
               />
 
-              <InputBox className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] max-w-full flex items-center'
+              <InputBox className='bg-[var(--color-bg)] px-4 py-3  rounded-[8px] w-[318px] max-w-full flex items-center'
                 label='Confirm Password'
                 placeholder='Confirm your password'
                 passIcon={passEyeClose}

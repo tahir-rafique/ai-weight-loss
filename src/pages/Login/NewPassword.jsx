@@ -28,14 +28,14 @@ const NewPassword = () => {
 
                             <InputBox
                                 passIcon={passEyeClose}
-                                className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] flex gap-1 '
+                                className='bg-[var(--color-bg)] px-4 py-3  rounded-[8px] w-[318px] flex gap-1 '
                                 label='New Password'
                                 placeholder='Enter your password'
                             />
 
                             <InputBox
                                 passIcon={passEyeClose}
-                                className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] flex gap-1'
+                                className='bg-[var(--color-bg)] px-4 py-3  rounded-[8px] w-[318px] flex gap-1'
                                 label='Confirm New Password'
                                 placeholder='Enter your password'
                                 type='password'

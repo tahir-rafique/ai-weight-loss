@@ -30,7 +30,7 @@ const PasswordRecover = () => {
                         <div className='flex flex-col gap-4 py-15 items-center'>
 
                             <InputBox
-                                className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] '
+                                className='bg-[var(--color-bg)] px-4 py-3  rounded-[8px] w-[318px] '
                                 label='Email address'
                                 placeholder='Enter your email address'
                                 type='email'

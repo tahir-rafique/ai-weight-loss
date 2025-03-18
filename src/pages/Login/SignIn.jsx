@@ -14,7 +14,7 @@ function SignIn() {
   // password show 
   const [show, setShow] = useState(false);
   const handelClickEye = () => {
-    setShow(show)
+    setShow(!show)
   }
 
   const navigate = useNavigate()
@@ -40,13 +40,13 @@ function SignIn() {
             <div className='flex flex-col gap-4  items-center max-w-[320px] mx-auto'>
 
               <InputBox
-                className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] '
+                className='bg-[var(--color-bg)] px-4 py-3  rounded-[8px] w-[318px] '
                 label='Email address'
                 placeholder='Enter your email address'
                 type='email'
               />
 
-              <InputBox className='bg-[var(--color-bg-light)] px-4 py-3  rounded-[8px] w-[318px] max-w-full flex items-center gap-1'
+              <InputBox className='bg-[var(--color-bg)] px-4 py-3  rounded-[8px] w-[318px] max-w-full flex items-center gap-1'
                 label='Password'
                 placeholder='Enter your password'
                 passIcon={passEyeClose}
