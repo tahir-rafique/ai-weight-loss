@@ -1,14 +1,16 @@
 import React from 'react'
-import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import Btn from './shared/Btn';
+
+import dashboard from '../assets/icons/sidebar/dashboard.webp'
+import dashboardActive from '../assets/icons/sidebar/dashboardActive.svg'
+
+
 import aichat from '../assets/icons/sidebar/ai-chat.webp'
 import goal from '../assets/icons/sidebar/goal.webp'
 import community from '../assets/icons/sidebar/community.webp'
-
-
 import setting from '../assets/icons/sidebar/setting.webp'
-import settingActive from '../assets/icons/sidebar/setting.webp'
-
+import settingActive from '../assets/icons/sidebar/settingActive.svg'
 
 
 
@@ -31,15 +33,15 @@ const SideBar = () => {
 
                     {locaction == '/dashboard-page'
                         ?
-                        <Link to='/dashboard-page' className='text-[var(--color-btn)] flex gap-2 shadow-md rounded-[8px] px-4 py-3'>
-                            {/* <img src={dashboardActive} alt="" /> */}
+                        <NavLink to='/dashboard-page' className='text-[var(--color-btn)] flex gap-2 shadow-md rounded-[8px] px-4 py-3'>
+                            <img src={dashboardActive} alt="" />
                             <p className='font-medium'>  Dashboard  </p>
-                        </Link>
+                        </NavLink>
                         :
-                        <Link to='/dashboard-page' className='hover:text-[var(--color-btn)] flex gap-2 hover:shadow-md rounded-[8px] px-4 py-3'>
-                            {/* <img src={setting} alt="" /> */}
+                        <NavLink to='/dashboard-page' className='hover:text-[var(--color-btn)] flex gap-2 hover:shadow-md rounded-[8px] px-4 py-3'>
+                            <img src={dashboard} alt="" />
                             <p className='font-medium'>  Dashboard  </p>
-                        </Link>
+                        </NavLink>
                     }
 
 
@@ -62,15 +64,15 @@ const SideBar = () => {
 
                     {locaction == '/settings-page'
                         ?
-                        <Link to='/settings-page' className='text-[var(--color-btn)] flex gap-2 shadow-md rounded-[8px] px-4 py-3'>
+                        <NavLink to='/settings-page' className='text-[var(--color-btn)] flex gap-2 shadow-md rounded-[8px] px-4 py-3'>
                             <img src={settingActive} alt="" />
                             <p className='font-medium'>  Settings  </p>
-                        </Link>
+                        </NavLink>
                         :
-                        <Link to='/settings-page' className='hover:text-[var(--color-btn)] flex gap-2 hover:shadow-md rounded-[8px] px-4 py-3'>
+                        <NavLink to='/settings-page' className='hover:text-[var(--color-btn)] flex gap-2 hover:shadow-md rounded-[8px] px-4 py-3'>
                             <img src={setting} alt="" />
                             <p className='font-medium'>  Settings  </p>
-                        </Link>
+                        </NavLink>
                     }
 
                 </div>
