@@ -8,6 +8,8 @@ export const InputBox = ({
     passIcon,
     handelClick,
     type,
+    style,
+    
 
 
 }) => {
@@ -16,7 +18,7 @@ export const InputBox = ({
             <label htmlFor="inpt" className='text-[14px]' >{label}</label>
             <div className={`${className} `}>
                 <img src={icon} alt="" />
-                <input id='inpt' placeholder={placeholder} className='w-full' type={type} />
+                <input id='inpt' placeholder={placeholder} className={`w-full`} type={type} style={style}  name={name} />
                 <img src={passIcon} alt="" className='cursor-pointer' onClick={handelClick} />
             </div>
         </div>

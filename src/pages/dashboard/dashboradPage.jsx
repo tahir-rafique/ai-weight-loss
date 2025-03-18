@@ -2,6 +2,7 @@ import React from 'react'
 import SideBar from '../../components/sideBar'
 import mdlogo from '../../assets/icons/mdlogo.webp'
 import Dashborad from './../../components/dashboard';
+import { Link } from 'react-router-dom';
 
 
 const DashboradPage = () => {
@@ -9,9 +10,9 @@ const DashboradPage = () => {
         <div className='p-5 bg-[var(--color-bg)] h-screen w-screen flex'>
             {/* sidebar */}
             <div className="sidebar overflow-y-auto w-[260px] h-full">
-                <div>
+                <Link to='/'>
                     <img src={mdlogo} alt="" className='h-[60px]' />
-                </div>
+                </Link>
                 <div className='h-[calc(100%_-_60px)]'>
                     <SideBar />
                 </div>

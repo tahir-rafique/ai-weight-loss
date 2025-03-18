@@ -14,10 +14,8 @@ import goalCompleted from '../assets/icons/dashboard/goal-completed.svg'
 
 const Dashborad = () => {
   return (
-    <div className='bg-[var(--color-bg-white)] rounded-t-[8px] rounded-br-[8px]  h-full w-full px-5 py-8 flex flex-col gap-8 relative '>
+    <div className='bg-[var(--color-bg-white)] rounded-t-[8px] rounded-br-[8px]  h-full w-full px-5 py-6 flex flex-col gap-4 relative '>
       {/* dashboard-top */}
-
-
 
       <div className="dashboard-top flex justify-between">
         <h4 className='text-[var(--color-btn)] font-[750] font-secondary'>Dashboard</h4>
@@ -33,11 +31,9 @@ const Dashborad = () => {
 
       {/* Dash-bottom */}
       <div className="dashboard-bottom flex flex-col gap-y-[26px]">
-        <div className="shadow-[#fcc378] shadow-xs  border-[var(--color-primary)] border-b-[10px] p-5 pl-[40px] rounded-[8px] flex flex-col gap-y-[26px]">
-
-          <div className='gaols-section flex flex-col gap-y-6'>
-
-            {/*  */}
+        <div className="shadow-[#fcc378] shadow-xs  border-[var(--color-primary)] border-b-[10px] p-5 pl-[40px] rounded-[8px] flex flex-col ">
+          {/* gaols-section */}
+          <div className='gaols-section flex flex-col gap-y-4'>
             <div className='flex justify-between'>
               <h4 className='text-[var(--color-primary)] font-semibold font-secondary'>
                 Today's<span className='text-[var(--color-dark)]'> Goals </span>to Achieve
@@ -50,8 +46,8 @@ const Dashborad = () => {
             </div>
 
             <div className='flex flex-col gap-y-[23px]'>
-              {/* days & date */}
-              <div className='w-[95%] flex justify-between items-center'>
+              {/* goals-days */}
+              <div className=' w-[95%] flex justify-between items-center'>
 
                 <div className='w-fit'>
                   <p>Mon</p>
@@ -139,15 +135,15 @@ const Dashborad = () => {
 
               </div>
 
-              {/* goal completed */}
-              <div className=' flex flex-col gap-y-[15px] overflow-y-auto'>
+              {/* goals completed */}
+              <div className=' flex flex-col gap-y-3.5 overflow-y-auto h-[250px] pt-2 px-2'>
+                {/* goal-1 */}
+                <div className='goal-completed flex gap-4'>
 
-                <div className='goal-complete flex gap-10'>
-                  {/* div-1 */}
                   <div className=' flex items-center w-30'>
                     <h6 className=' text-[var(--color-dark-light)] font-semibold '>08:30 Am</h6>
                   </div>
-                  {/* div-2 */}
+
                   <div className='bg-[var(--color-bg)] rounded-[8px] flex flex-col gap-2 w-full p-5 '>
                     <div className='flex justify-between items-center '>
                       <h5 className='font-bold'>Headache Release</h5>
@@ -167,12 +163,12 @@ const Dashborad = () => {
                 </div>
 
 
-                <div className='goal-complete flex gap-10'>
-                  {/* div-1 */}
+                {/* goal-2 */}
+                <div className='goal-completed flex gap-4'>
                   <div className=' flex items-center w-30'>
                     <h6 className=' text-[var(--color-dark-light)] font-semibold '>08:30 Am</h6>
                   </div>
-                  {/* div-2 */}
+
                   <div className='bg-[var(--color-bg)] rounded-[8px] flex flex-col gap-2 w-full p-5 '>
                     <div className='flex justify-between items-center '>
                       <h5 className='font-bold'>Headache Release</h5>
@@ -192,6 +188,62 @@ const Dashborad = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* goal-3 */}
+                <div className='goal-completed flex gap-4'>
+                  <div className=' flex items-center w-30'>
+                    <h6 className=' text-[var(--color-dark-light)] font-semibold '>08:30 Am</h6>
+                  </div>
+
+                  <div className='bg-[var(--color-bg)] rounded-[8px] flex flex-col gap-2 w-full p-5 '>
+                    <div className='flex justify-between items-center '>
+                      <h5 className='font-bold'>Headache Release</h5>
+                      <div className='text-2xl font-black rounded-full'>
+                        <img src={threeDotIcon} alt="" />
+                      </div>
+                    </div>
+
+                    <div className='flex justify-between items-center '>
+                      <p><span className='text-[var(--color-heading)]'>Duration:</span> 07 days</p>
+
+                      <div className='flex items-center gap-2 bg-[var(--sec-bg)] px-2 py-1 rounded-[8px]'>
+                        <img src={tickGreen} alt="goal-completed-icon" />
+                        <p className='text-large font-bold text-[var(--text-sec)]'> Goal completed</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+                {/* goal-4 */}
+                <div className='goal-completed flex gap-4'>
+                  <div className=' flex items-center w-30'>
+                    <h6 className=' text-[var(--color-dark-light)] font-semibold '>08:30 Am</h6>
+                  </div>
+
+                  <div className='bg-[var(--color-bg)] rounded-[8px] flex flex-col gap-2 w-full p-5 '>
+                    <div className='flex justify-between items-center '>
+                      <h5 className='font-bold'>Headache Release</h5>
+                      <div className='text-2xl font-black rounded-full'>
+                        <img src={threeDotIcon} alt="" />
+                      </div>
+                    </div>
+
+                    <div className='flex justify-between items-center '>
+                      <p><span className='text-[var(--color-heading)]'>Duration:</span> 07 days</p>
+
+                      <div className='flex items-center gap-2 bg-[var(--sec-bg)] px-2 py-1 rounded-[8px]'>
+                        <img src={tickGreen} alt="goal-completed-icon" />
+                        <p className='text-large font-bold text-[var(--text-sec)]'> Goal completed</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
               </div>
             </div>
           </div>
@@ -242,9 +294,6 @@ const Dashborad = () => {
                 <p className='font-secondary'>Goals In Progress</p>
                 <h4 className='font-secondary  text-[var(--color-heading)] font-[750]'>03</h4>
               </div>
-
-
-
 
             </div>
           </div>

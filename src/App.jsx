@@ -7,6 +7,7 @@ import VerifyCode from './pages/login/VerifyCode'
 import NewPassword from './pages/login/NewPassword'
 import Conversation from './pages/conversation/conversation'
 import DashboradPage from './pages/dashboard/dashboradPage'
+import SettingPage from './pages/setting/settingPage'
 
 function App() {
   return (
@@ -31,10 +32,12 @@ function App() {
 
 
         {/* Conversation  */}
-        <Route path='conversation' element={<Conversation />} />
+        <Route path='conversation-page' element={<Conversation />} />
 
 
         {/* Setting */}
+        <Route path='/settings-page' element={<SettingPage />} />
+
 
 
 

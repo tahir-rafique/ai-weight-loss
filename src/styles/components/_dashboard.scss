@@ -63,24 +63,24 @@
 
 // scrollbar - custom
 
-
-
+.dashboard-bottom {
+  // background-color: cyan;
 
   /* width */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
+    height: 8px;
   }
 
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    width: 1px;
+    background: transparent;
   }
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: green;
-    width: 1px;
+    background: var(--color-bg);
+    border-radius: 20px;
   }
 
   /* Handle on hover */
@@ -88,3 +88,4 @@
     background: #555;
     width: 1px;
   }
+}
