@@ -5,11 +5,12 @@ import SignUp from './pages/login/SignUp'
 import PasswordRecover from './pages/login/PasswordRecover'
 import VerifyCode from './pages/login/VerifyCode'
 import NewPassword from './pages/login/NewPassword'
-import Conversation from './pages/conversation/conversation'
 import DashboradPage from './pages/dashboard/dashboradPage'
 import SettingPage from './pages/setting/settingPage'
 import GoalPage from './pages/goal/goalPage'
 import CommunityPage from './pages/community/communityPage'
+import ConversationPage from './pages/conversation/conversationPage';
+import CommunityChat from './pages/community/communityChat'
 
 function App() {
   return (
@@ -24,12 +25,11 @@ function App() {
         <Route path='new-password' element={<NewPassword />} />
 
 
-
         {/* Dashboard */}
         <Route path='dashboard-page' element={<DashboradPage />} />
 
         {/* ai-chat / Conversation  */}
-        <Route path='/conversation-page' element={<Conversation />} />
+        <Route path='/conversation-page' element={<ConversationPage />} />
 
         {/* goals  */}
         <Route path='/goals-page' element={<GoalPage />} />
@@ -37,12 +37,12 @@ function App() {
         {/* community  */}
         <Route path='/community-page' element={<CommunityPage />} />
 
+        {/* 📍 remove this page after while */}
+        <Route path='/community-chat' element={<CommunityChat />} />
+
 
         {/* Setting */}
         <Route path='/settings-page' element={<SettingPage />} />
-
-
-
 
 
       </Routes >

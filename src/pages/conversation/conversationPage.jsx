@@ -19,8 +19,9 @@ import notes from '../../assets/icons/conversation/notesicon.svg'
 import community from '../../assets/icons/conversation/communityicon.svg'
 import forwardMessage from '../../assets/icons/conversation/forward.svg'
 import arrowcircleup from '../../assets/icons/conversation/arrowcircleup.svg'
+import { useNavigate } from 'react-router-dom';
 
-const Conversation = () => {
+const ConversationPage = () => {
 
     // Modal
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -34,11 +35,16 @@ const Conversation = () => {
         setIsModalOpen(false);
     };
 
+    // back btn
+    const navigate = useNavigate()
+
     return (
         <div className='bg-[var(--color-bg)] h-screen w-screen lg:pt-20 lg:pr-5 lg:pl-25 lg:pb-5'>
 
             {/* back button */}
-            <button className='fixed top-10 left-10 cursor-pointer'>
+            <button 
+            onClick={()=>{navigate('/dashboard-page')}}
+            className='fixed top-10 left-10 cursor-pointer'>
                 <img src={arrowcircleup} alt="" />
             </button>
 
@@ -250,8 +256,8 @@ const Conversation = () => {
                             </div>
 
                             <div className="part2">
-                                <div className="input-wraper bg-[var(--color-bg)] rounded-[4px] px-2 py-1">
-                                    <InputBox placeholder='Search thread' icon={searchicon} className='flex items-center gap-4 w-full' />
+                                <div className="input-wraper bg-[var(--color-bg)] rounded-[4px] pl-2  py-1">
+                                    <InputBox placeholder='Search thread' icon={searchicon} className='flex items-center gap-3 w-full' />
                                 </div>
                             </div>
                         </div>
@@ -375,4 +381,4 @@ const Conversation = () => {
     )
 }
 
-export default Conversation
+export default ConversationPage;

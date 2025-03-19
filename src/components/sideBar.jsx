@@ -1,19 +1,11 @@
 import React from 'react';
-import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
+import {  NavLink, useLocation, useNavigate } from 'react-router-dom';
 import Btn from './shared/Btn';
 import aichat from '../assets/icons/sidebar/ai-chat.webp';
 import dashboard from '../assets/icons/sidebar/dashboard.webp';
-// import dashboardActive from '../assets/icons/sidebar/dashboardActive.svg';
 import goal from '../assets/icons/sidebar/goal.webp';
-import goalActive from '../assets/icons/sidebar/goalActive.svg';
 import community from '../assets/icons/sidebar/community.webp';
-import communityActive from '../assets/icons/sidebar/community-active.svg';
 import setting from '../assets/icons/sidebar/setting.webp';
-import settingActive from '../assets/icons/sidebar/settingActive.svg';
-
-// use to get pages-link 
-var locaction = window.location.pathname;
-// console.log(locaction);
 
 const SideBar = () => {
     const loc = useLocation()
@@ -32,9 +24,9 @@ const SideBar = () => {
                         <p className='font-medium'>  Dashboard  </p>
                     </NavLink>
 
-                    {/* ai-chat */}
+                    {/* ai-chat / conversation */}
                     <NavLink
-                        to='/conversation'
+                        to='/conversation-page'
                         className="navlink flex gap-2 items-center hover:shadow-md rounded-[8px] px-4 py-3"
                     >
                         <img src={aichat} alt="" />
