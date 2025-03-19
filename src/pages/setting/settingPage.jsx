@@ -33,13 +33,13 @@ const SettingPage = () => {
             </div>
 
             {/* main */}
-            <div className="w-[calc(100%_-_260px)] relative">
+            <div className="w-[calc(100%_-_260px)] relative ">
 
                 {/* inverted-border */}
                 <div className="inverted-radius"></div>
 
                 {/* Setting-page */}
-                <div className='setting-wraper bg-[var(--color-bg-white)] h-full w-full p-3'>
+                <div className='setting-wraper bg-[var(--color-bg-white)] h-full w-full p-3 rounded-t-[8px] rounded-br-[8px]'>
 
                     <div className='setting-main w-full h-full flex flex-col gap-y-5'>
 
