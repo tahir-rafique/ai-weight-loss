@@ -12,7 +12,7 @@ import Btn from '../../components/shared/Btn'
 const CommunityPage = () => {
 
     return (
-        <div className='p-5 bg-[var(--color-bg)] h-screen w-screen flex'>
+        <div className='p-5 bg-[var(--color-bg)] h-full w-full flex'>
             {/* sidebar */}
             <div className="sidebar w-[260px]">
                 <Link to='/'>

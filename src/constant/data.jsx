@@ -12,6 +12,12 @@ import comimg8 from '../assets/images/community/comimg4.webp'
 import comimg9 from '../assets/images/community/comimg1.webp'
 import comimg10 from '../assets/images/community/comimg2.webp'
 
+import Actmem1 from '../assets/images/community/comimg2.webp'
+import Actmem2 from '../assets/images/community/comimg2.webp'
+import Actmem3 from '../assets/images/community/comimg2.webp'
+import Actmem4 from '../assets/images/community/comimg2.webp'
+import Actmem5 from '../assets/images/community/comimg2.webp'
+
 
 
 // community
@@ -31,3 +37,13 @@ export const communityCardData = [
 ]
 
 
+// community chat
+
+export const activeMember = [
+
+    { usrimg: Actmem1, uName: "Anas", uStatus: "Online" },
+    { usrimg: Actmem2, uName: "Henry", uStatus: "Online" },
+    { usrimg: Actmem3, uName: "Zorro", uStatus: "Online" },
+    { usrimg: Actmem4, uName: "James", uStatus: "Online" },
+    { usrimg: Actmem5, uName: "Henry", uStatus: "Online" },
+]

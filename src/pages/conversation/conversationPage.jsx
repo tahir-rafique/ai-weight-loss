@@ -39,7 +39,7 @@ const ConversationPage = () => {
     const navigate = useNavigate()
 
     return (
-        <div className='bg-[var(--color-bg)] h-screen w-screen lg:pt-20 lg:pr-5 lg:pl-25 lg:pb-5'>
+        <div className='bg-[var(--color-bg)] h-full w-full lg:pt-20 lg:pr-5 lg:pl-25 lg:pb-5'>
 
             {/* back button */}
             <button 

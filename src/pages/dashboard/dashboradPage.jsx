@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const DashboradPage = () => {
     return (
-        <div className='p-5 bg-[var(--color-bg)] h-screen w-screen flex'>
+        <div className='p-5 bg-[var(--color-bg)] h-full w-full flex'>
             {/* sidebar */}
             <div className="sidebar overflow-y-auto w-[260px] h-full">
                 <Link to='/'>
