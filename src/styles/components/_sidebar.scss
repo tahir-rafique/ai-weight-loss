@@ -1,7 +1,7 @@
 .sidebar-links {
   .navlink.active {
     color: var(--color-btn);
-    box-shadow: 1px 2px 1px rgba(192, 191, 191, 0.413);
+    box-shadow: 1px 3px 1px var(--color-bg);
 
     img {
       filter: invert(63%) sepia(97%) saturate(4047%) hue-rotate(5deg)

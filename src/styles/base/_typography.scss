@@ -3,7 +3,6 @@
 }
 
 body {
-  // background-color: (var(--color-black-theme));
   h1 {
     font-size: 44px;
     font-family: "Manrope";
@@ -52,15 +51,14 @@ body {
   .font-secondary {
     font-family: "Avenir Light";
   }
-   .font-secondary-m {
+  .font-secondary-m {
     font-family: "Avenir Medium";
   }
   .font-secondary-b {
     font-family: "Avenir Black";
   }
-  
 }
 
-.myrounded{
+.myrounded {
   border-radius: 8px;
 }

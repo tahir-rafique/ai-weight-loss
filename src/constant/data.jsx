@@ -23,6 +23,34 @@
 
 // ]
 
+// community
+import comimg1 from '../assets/images/community/comimg1.webp'
+import comimg2 from '../assets/images/community/comimg2.webp'
+import comimg3 from '../assets/images/community/comimg3.webp'
+import comimg4 from '../assets/images/community/comimg4.webp'
+import comimg5 from '../assets/images/community/comimg5.webp'
+import comimg6 from '../assets/images/community/comimg5.webp'
+import comimg7 from '../assets/images/community/comimg4.webp'
+import comimg8 from '../assets/images/community/comimg3.webp'
+import comimg9 from '../assets/images/community/comimg2.webp'
+import comimg10 from '../assets/images/community/comimg1.webp'
 
-w
+
+
+// community
+export const communityCardData = [
+    { ComImg: comimg1, ComTitle: 'Healthcare', ComMemeber: '576 members' },
+    { ComImg: comimg2, ComTitle: 'Healthcare', ComMemeber: '576 members' },
+    { ComImg: comimg3, ComTitle: 'Healthcare', ComMemeber: '576 members' },
+    { ComImg: comimg4, ComTitle: 'Healthcare', ComMemeber: '576 members' },
+    { ComImg: comimg5, ComTitle: 'Healthcare', ComMemeber: '576 members' },
+
+    { ComImg: comimg6, ComTitle: 'Healthcare', ComMemeber: '576 members' },
+    { ComImg: comimg7, ComTitle: 'Healthcare', ComMemeber: '576 members' },
+    { ComImg: comimg8, ComTitle: 'Healthcare', ComMemeber: '576 members' },
+    { ComImg: comimg9, ComTitle: 'Healthcare', ComMemeber: '576 members' },
+    { ComImg: comimg10, ComTitle: 'Healthcare', ComMemeber: '576 members' },
+
+]
+
 
