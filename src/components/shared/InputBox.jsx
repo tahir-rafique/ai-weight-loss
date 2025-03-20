@@ -10,8 +10,6 @@ export const InputBox = ({
     type,
     style,
     
-
-
 }) => {
     return (
         <div className='flex flex-col gap-1'>

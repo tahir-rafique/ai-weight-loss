@@ -1,5 +1,5 @@
 import React from 'react';
-import {  NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import Btn from './shared/Btn';
 import aichat from '../assets/icons/sidebar/ai-chat.webp';
 import dashboard from '../assets/icons/sidebar/dashboard.webp';
@@ -10,12 +10,13 @@ import setting from '../assets/icons/sidebar/setting.webp';
 const SideBar = () => {
     const loc = useLocation()
     console.log(loc)
+
     const navigate = useNavigate()
     return (
-        <div className='sidebar bg-[var(--color-bg-white)] flex flex-col rounded-tl-[8px] rounded-bl-[8px]  h-full w-full'>
+        <div className='sidebar bg-[var(--color-bg-white)] flex flex-col rounded-tl-[8px] rounded-bl-[8px]  min-h-screen  w-full'>
 
-            <div className='flex flex-col justify-between h-full w-full p-3'>
-                <div className='sidebar-links flex flex-col gap-y-2  text-[var(--color-dark-light)] pt-4'>
+            <div className='flex flex-col justify-between gap-y-[730px]  h-ful w-full px-3'>
+                <div className='sidebar-links flex flex-col gap-y-2  text-[var(--color-dark-light)] pt-4 '>
                     <NavLink
                         to='/dashboard-page'
                         className='navlink flex gap-2 hover:shadow-md rounded-[8px] px-4 py-3'
@@ -62,7 +63,7 @@ const SideBar = () => {
                     </NavLink>
                 </div>
 
-                <div>
+                <div className='sidebar-btn'>
                     <Btn
                         title='Logout'
                         onClick={() => { navigate('/') }}

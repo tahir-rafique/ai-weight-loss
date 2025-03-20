@@ -20,22 +20,17 @@ const PasswordRecover = () => {
             <div className='flex flex-col gap-2 items-center h-full w-full'>
 
                 <h1 className='text-center font-semibold'>Password Recovery</h1>
-
+                
                 <div className='bg-[url(../assets/icons/login/subtract.svg)]  bg-no-repeat  w-full bg-center h-full py-30 pb-50 relative'  >
-                    <form
-                        onSubmit={(e) => {
-                            e.preventDefault()
-                        }}>
+                    <form onSubmit={(e) => { e.preventDefault() }}>
 
                         <div className='flex flex-col gap-4 py-15 items-center'>
-
                             <InputBox
                                 className='bg-[var(--color-bg)] px-4 py-3  rounded-[8px] w-[318px] '
                                 label='Email address'
                                 placeholder='Enter your email address'
                                 type='email'
                             />
-
                             <Btn
                                 title='Continue'
                                 className='bg-[var(--color-btn)] px-10 py-3 rounded-[8px] font-semibold w-[318px] flex justify-center items-center shadow-md'

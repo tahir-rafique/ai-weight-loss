@@ -17,7 +17,7 @@ function SignUp() {
   }
   return (
 
-    <div className='p-5 bg-[var(--color-background)] '>
+    <div className='p-5 bg-[var(--color-background)] h-full w-full bg-green-300'>
 
       <div className='w-full'>
         <Link to="/" className='cursor-pointer'>

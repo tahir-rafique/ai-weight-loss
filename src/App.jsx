@@ -36,8 +36,7 @@ function App() {
 
         {/* community  */}
         <Route path='/community-page' element={<CommunityPage />} />
-
-        {/* 📍 remove this page after while */}
+        {/*  Community-Chat */}
         <Route path='/community-chat' element={<CommunityChat />} />
 
 

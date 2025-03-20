@@ -20,7 +20,6 @@ const VerifyCode = () => {
 
             <div className=' flex flex-col gap-2 items-center  h-full w-full'>
 
-
                 <h1 className='text-center font-semibold'>Verify Code</h1>
 
                 <div className='bg-[url(../assets/icons/login/subtract.svg)]  bg-no-repeat  w-full bg-center h-full py-30 pb-50 relative'  >

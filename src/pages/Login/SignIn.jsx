@@ -20,7 +20,7 @@ function SignIn() {
   const navigate = useNavigate()
   return (
 
-    <div className='bg-[var(--color-background)]  p-5'>
+    <div className='p-5 bg-[var(--color-background)] h-full w-full'>
       <div className='w-full'>
         <Link to="/" className='cursor-pointer'>
           <img src={logo} alt="no" className='w-60 pt-5 px-10' />
