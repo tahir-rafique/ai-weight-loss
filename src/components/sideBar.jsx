@@ -13,9 +13,9 @@ const SideBar = () => {
 
     const navigate = useNavigate()
     return (
-        <div className='sidebar bg-[var(--color-bg-white)] flex flex-col rounded-tl-[8px] rounded-bl-[8px]  min-h-screen  w-full'>
+        <div className='sidebar bg-[var(--color-bg-white)] flex flex-col rounded-tl-[8px]  rounded-bl-[8px] h-full  w-full'>
 
-            <div className='flex flex-col justify-between gap-y-[730px]  h-ful w-full px-3'>
+            <div className='flex flex-col justify-between gap-y-[730px]  h-full w-full px-3'>
                 <div className='sidebar-links flex flex-col gap-y-2  text-[var(--color-dark-light)] pt-4 '>
                     <NavLink
                         to='/dashboard-page'
